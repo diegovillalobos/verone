@@ -50,10 +50,8 @@
 				</<?php echo $heading_tag; ?>>
 </div>
 
-<div id="menus">
-<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'extramenu' ) ); ?>
-
-
+<div id="access" role="navigation">
+<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 </div>
 
 </div>

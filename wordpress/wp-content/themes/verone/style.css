@@ -26,20 +26,60 @@ body {
 
 /* Site Title */
 
-#title a {
-  background-color: #b40033;
-  font-size: 1.5em;
-  font-family: "HelveticaNeueLT Pro 35 Lt", Sans-Serif;
-  font-weight: lighter;
-  color: #fff;
-  padding: 15px;
-	text-decoration: none;
-	}
-	
-#menus {
-	color: black;
+#title {
 	float: left;
-	}	
+	position: relative;
 	
+}
+
+
+#title a {
+	background-color: #b40033;
+	font-size: 1.5em;
+	font-family: "HelveticaNeueLT Pro 35 Lt", Sans-Serif;
+	font-weight: lighter;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+	
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	position: relative;
+	display: inline;;
+	margin: 0 auto;
+	width: 940px;
+}
+
+#access  li {
+	list-style: none;
+	text-transform: capitalize;
+	float: left;
+	padding: 10px;
+}
+
+#access ul li:after{
+	color: #aaa;
+	content: "|";
+}
+	
+#access a {
+	color: #aaa;
+	display: block;
+	line-height: 38px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+#access li:hover > a{
+	color: #ccc;
+}
+
+#access ul li.current_page_item > a{
+	color: #444;
+	font-weight: bold;
+}
 
 		
