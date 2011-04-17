@@ -12,8 +12,9 @@
 	if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 
 			<li id="search" class="widget-container widget_search">
+				<span class="search"><?php echo( 'search'); ?></span>				
 				<?php get_search_form(); ?>
-			</li>
+				</li>
 
 			
 		<?php endif; // end primary widget area ?>

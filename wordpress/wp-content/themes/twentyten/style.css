@@ -1041,7 +1041,18 @@ a.comment-edit-link:hover {
 /* Comments form */
 input[type=submit] {
 	color: #333;
+	background-color: white;
+	border: none;
+	position: relative;
+	top: -20px;
+	left: 10px;
 }
+
+input[type=submit]:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
 #respond {
 	border-top: 1px solid #e7e7e7;
 	margin: 24px 0;
@@ -1121,7 +1132,7 @@ h3#reply-title {
 	max-width: 100%;
 }
 .widget_search #s {/* This keeps the search inputs in line */
-	width: 60%;
+	width: 100%;
 
 }
 .widget_search label {
@@ -1192,11 +1203,11 @@ h3#reply-title {
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
-	padding: 0 20px 0 0;
+	padding: 0 80px 0 0;
 }
 #main .widget-area ul ul {
 	border: none;
-	margin-left: 1.3em;
+	margin-left: 2.3em;
 	padding: 0;
 }
 #primary {
