@@ -43,7 +43,7 @@ body {
 	text-decoration: none;
 }
 	
-/* =Menu
+/* = Navigation
 -------------------------------------------------------------- */
 
 #access {
@@ -57,14 +57,14 @@ body {
 	list-style: none;
 	text-transform: capitalize;
 	float: left;
-	padding: 10px;
 }
 
-#access ul li:after{
-	color: #aaa;
-	content: "|";
+/*								
+#access  li:after {      << couldn't get this right.    !!!!!
+	content: "|"
 }
-	
+*/
+
 #access a {
 	color: #aaa;
 	display: block;
