@@ -90,11 +90,18 @@ body {
 	float: right;
 	overflow: hidden;
 	width: 220px;
+	position: relative;
+	left: -170px;
 }
 
 .widget_search #s {/* This keeps the search inputs in line */
-	width: 10%;
+	width: 20%;
+	position: relative;
+	right: -100px;
+	height: 10px;
+
 }
 .widget_search label {
 	display: none;
+	height: 10px;
 }

@@ -1122,6 +1122,7 @@ h3#reply-title {
 }
 .widget_search #s {/* This keeps the search inputs in line */
 	width: 60%;
+
 }
 .widget_search label {
 	display: none;
@@ -1200,6 +1201,7 @@ h3#reply-title {
 }
 #primary {
 }
+
 #secondary {
 }
 

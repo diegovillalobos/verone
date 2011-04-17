@@ -1,16 +1,5 @@
-<?php
-/**
- * The template for displaying Search Results pages.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
-
-		<div id="container">
-			<div id="content" role="main">
 				
 
 <?php if ( have_posts() ) : ?>
@@ -31,8 +20,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-0 -->
 <?php endif; ?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+			
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
