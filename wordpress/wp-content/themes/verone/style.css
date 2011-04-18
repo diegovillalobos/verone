@@ -27,6 +27,16 @@ body {
 }
 
 
+#content {
+	float: left;	
+	width: 100%;
+	top: 4em;
+}
+
+h2 {
+	color: #b40033;
+}
+
 /* Site Title */
 
 #title {
@@ -158,7 +168,7 @@ input[type=submit]:hover {
 }
 
 .widget-area h3 {
-	font-size: 1.3em;
+	font-size: 1em;
 	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
 	font-weight: lighter;
 	line-height: 2.5em;
@@ -169,8 +179,7 @@ input[type=submit]:hover {
 	line-height: 1.1em;	
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
 	color: #777777;	
-	font-size: 1em;
-	
+	font-size: .8em;
 }
 
 .widget-area ul a:before {
@@ -189,6 +198,11 @@ input[type=submit]:hover {
 	color: #b40033;
 	
 }
+
+
+
+
+
 
 
 

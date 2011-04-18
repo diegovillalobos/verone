@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 
+
 <div id="content">
 
 
@@ -24,6 +25,7 @@
 	
 
 <?php endif; ?>
+
 
 
 </div>

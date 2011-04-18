@@ -40,4 +40,21 @@ function verone_widgets_init() {
 
 add_action( 'widgets_init', 'verone_widgets_init' );
 
+
+
+
+/* Set the content width based on the theme's design and stylesheet.
+ *
+ * Used to set the width of images and content. Should be equal to the width the theme
+ * is designed for, generally via the style.css stylesheet.
+ */
+if ( ! isset( $content_width ) )
+	$content_width = 640;
+
+
+
 ?>
+
+
+
+
