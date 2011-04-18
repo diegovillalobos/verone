@@ -56,7 +56,9 @@
 
 </div>
 
-
+<div id="search" class="widget-container widget_search">
+	<?php get_search_form(); ?>
+</div>
 
 
 

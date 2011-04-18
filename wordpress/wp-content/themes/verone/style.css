@@ -15,6 +15,9 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 
 /* Begin Stylin */
 
+
+
+
 body {
 	color: #333;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Helvetica, Arial, Sans-Serif;
@@ -86,29 +89,26 @@ body {
 -----------------------------------------------------------------*/
 
 
-#primary {
-	float: right;
-	overflow: hidden;
-	width: 220px;
-	position: relative;
-	left: -170px;
+
+#search {
+	width: 220px;	
+	float: left;
+}
+	
+	
+.widget_search label {
+	display: none;
 }
 
 .widget_search #s {/* This keeps the search inputs in line */
-	width: 40%;
 	background-color: #fff;
-	position: relative;
-	right: -40px;
-	top: -10px;
 	height: 20px;
 	border: none;
 }
+
 .widget_search #s:hover {/* This keeps the search inputs in line */
 	background-color: #eee;
 	border: none;
-}
-.widget_search label {
-	display: none;
 }
 
 input[type=submit] {
@@ -118,10 +118,58 @@ input[type=submit] {
 	font-size: .9em;
 	border: none;
 	position: relative;
-	top: -26px;
-	left: 43px;
 }
 
 input[type=submit]:hover {
 	color: #333;
 }
+	
+	
+/* = Sidebar
+---------------------------------------------------------------*/
+
+#primary {
+	float: right;
+	overflow: hidden;
+	width: 220px;
+	position: relative;
+	left: -170px;
+}
+
+.widget-area h3 {
+	font-size: 1.3em;
+	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
+	font-weight: lighter;
+	line-height: 2.5em;
+	color: #444444;	
+}
+
+.widget-area ul {
+	line-height: 1.1em;	
+	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
+	color: #777777;	
+	font-size: 1em;
+	
+}
+
+.widget-area ul a:before {
+	content: "\00BB";
+	color: #b40033;
+}
+
+.widget-area ul a {
+	text-decoration: none;
+	color: #777777;
+	
+}
+
+.widget-area ul p:before {
+		content: "\00BB";
+	color: #b40033;
+	
+}
+
+
+
+
+
