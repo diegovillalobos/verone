@@ -100,30 +100,51 @@ body {
 	display: none;
 }
 
-.widget_search #s {/* This keeps the search inputs in line */
-	background-color: #fff;
-	height: 20px;
+#s:active {
 	border: none;
 }
 
-.widget_search #s:hover {/* This keeps the search inputs in line */
-	background-color: #eee;
+.widget_search #s {/* This keeps the search inputs in line */
+	background-color: #fff;
+	color: #777;
+	width: 100px;
+	height: 14px;
+	line-height: 10px;
+	padding: 0;
 	border: none;
+	position: relative;
+	top: 5px;
+	left: 65px;
+}
+
+.widget_search #s:hover {
+	background-color: #fff;
+	border-bottom: solid thin #b40033;
+}
+
+.widget_search #s:focus,
+.widget_search #s:active {
+	background-color: #fff;
+	border: solid thin #b40033;
 }
 
 input[type=submit] {
-	color: #111;
-	background-color: #ccc;
+	color: #999;
+	background-color: #fff;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
 	font-size: .9em;
+	padding: 0;
+	height: 13px;
 	border: none;
 	position: relative;
+	top: 5px;
+	left: -90px;
 }
 
 input[type=submit]:hover {
-	color: #333;
+	color: #ccc;
 }
-	
+
 	
 /* = Sidebar
 ---------------------------------------------------------------*/
