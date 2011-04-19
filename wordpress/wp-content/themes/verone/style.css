@@ -155,7 +155,6 @@ input[type=submit]:hover {
 	overflow: hidden;
 	width: 220px;
 	position: relative;
-	left: -70px;
 }
 
 .widget-area h3 {
@@ -195,33 +194,34 @@ input[type=submit]:hover {
 
 #content {
 	float: left;	
-	width: 700px;
-	top: 4em;
-	background-color: red;
+	width: 100%;
+	top: 30em;
 }
 
 #content img {
-	float: left;	
-	width: 700px;
-	top: 4em;
-		-moz-column-count: 1;
-	-webkit-column-count: 1; 
-	column-count: 1;
-}
-
-#content p {
-	width: 450px;
-	ma
-	-moz-column-count: 2;
-	-webkit-column-count: 2; 
-	column-count: 2;
+	position: absolute;
+	top: -25em;
+	border: solid thin #aaa;
+	box-shadow: 0px 3px 10px 2px #ddd;
+	margin-bottom: 200px;
 }
 
 h2 {
 	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
 	font-size: 1.5em;
+	line-height: 30px;
 	color: #b40033;
 }
+
+#content p {
+	font-size: 1em;
+	float: left;
+	width: 300px;
+	position: relative;
+	margin-right: 40px;
+}
+
+
 
 
 
