@@ -21,21 +21,12 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 body {
 	color: #333;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Helvetica, Arial, Sans-Serif;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 1.25;
 	width: 970px;
-	margin: -13px auto;
+	margin: 15px auto;
 }
 
-
-#content {
-	float: left;	
-	width: 100%;
-	top: 4em;
-}
-
-h2 {
-	color: #b40033;
-}
 
 /* Site Title */
 
@@ -43,7 +34,6 @@ h2 {
 	float: left;
 	position: relative;
 }
-
 
 #title a {
 	background-color: #b40033;
@@ -54,6 +44,7 @@ h2 {
 	padding: 15px;
 	text-decoration: none;
 }
+	
 	
 /* = Navigation
 -------------------------------------------------------------- */
@@ -95,16 +86,14 @@ h2 {
 	font-weight: bolder;
 }
 
+
 /* = Search
 -----------------------------------------------------------------*/
-
-
 
 #search {
 	width: 220px;	
 	float: left;
 }
-	
 	
 .widget_search label {
 	display: none;
@@ -122,8 +111,9 @@ h2 {
 	line-height: 10px;
 	padding: 0;
 	border: none;
+	border-bottom: solid thin #b40033;
 	position: relative;
-	top: 5px;
+	top: 2px;
 	left: 65px;
 }
 
@@ -147,15 +137,16 @@ input[type=submit] {
 	height: 13px;
 	border: none;
 	position: relative;
-	top: 5px;
+	top: 2px;
 	left: -90px;
 }
 
 input[type=submit]:hover {
 	color: #ccc;
+	cursor: pointer;
 }
 
-	
+
 /* = Sidebar
 ---------------------------------------------------------------*/
 
@@ -164,11 +155,11 @@ input[type=submit]:hover {
 	overflow: hidden;
 	width: 220px;
 	position: relative;
-	left: -170px;
+	left: -70px;
 }
 
 .widget-area h3 {
-	font-size: 1em;
+	font-size: 1.2em;
 	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
 	font-weight: lighter;
 	line-height: 2.5em;
@@ -199,6 +190,38 @@ input[type=submit]:hover {
 	
 }
 
+/* = Content
+---------------------------------------------------------------*/
+
+#content {
+	float: left;	
+	width: 700px;
+	top: 4em;
+	background-color: red;
+}
+
+#content img {
+	float: left;	
+	width: 700px;
+	top: 4em;
+		-moz-column-count: 1;
+	-webkit-column-count: 1; 
+	column-count: 1;
+}
+
+#content p {
+	width: 450px;
+	ma
+	-moz-column-count: 2;
+	-webkit-column-count: 2; 
+	column-count: 2;
+}
+
+h2 {
+	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
+	font-size: 1.5em;
+	color: #b40033;
+}
 
 
 

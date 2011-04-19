@@ -1,5 +1,5 @@
 <?php 
-/* This is the header for out theme */
+/* This is the header for our theme */
 ?><!DOCTYPE html>
 
 <html <?php language_attributes(); ?>>
@@ -21,7 +21,7 @@
 
 // Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() ) )
+	if ( $site_description && ( is_home() || is_front_page() ) )
 	echo " : $site_description";
 
 ?></title>
@@ -45,7 +45,7 @@
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h4' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-title">
 					<span>
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 								'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
 					</span>
 				</<?php echo $heading_tag; ?>>
 </div>
