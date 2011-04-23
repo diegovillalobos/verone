@@ -61,9 +61,7 @@
 <div id="search" class="widget_search">
 	<?php get_search_form(); ?>
 </div>
-
-
-
+	
 </body>
 
 

@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
-
-<div id="content">
-<?php get_template_part( 'loop', 'index' ); ?>
+<div class='container'>
+	<div id="content">
+	  <div class='column'>
+	<?php get_template_part( 'loop', 'index' ); ?>
+		</div>
+	</div>
 </div>
 
 	

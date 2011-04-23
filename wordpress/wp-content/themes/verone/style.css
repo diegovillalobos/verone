@@ -154,7 +154,7 @@ input[type=submit]:hover {
 	float: right;
 	overflow: hidden;
 	width: 220px;
-	position: relative;
+	top: 80px;
 }
 
 .widget-area h3 {
@@ -223,7 +223,33 @@ h2 {
 
 
 
+/* = Container (columns)
+---------------------------------------------------------------*/
 
+.container {
+  position: relative;
+  background-color: red;
+}
+
+// clearfix
+.container:after {
+  content: " ";
+  display: block;
+  position: relative;
+  clear: both;
+  float: none;
+}
+
+.column {
+  width: 300px; // or whatever you column width is
+  margin: 0 30px 0 0; // or whatever your gutters are
+  float: left;
+}
+
+// remove margin from last column
+.column:last-child {
+  margin: 0;
+}
 
 
 
