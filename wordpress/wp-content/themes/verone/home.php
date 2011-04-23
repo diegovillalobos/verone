@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header(); ?>
 
 
@@ -8,6 +7,3 @@
 
 	
 <?php get_sidebar(); ?>
-
-
->>>>>>> Couple of changes

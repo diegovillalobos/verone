@@ -27,13 +27,6 @@ body {
 	margin: 15px auto;
 }
 
-
-<<<<<<< Updated upstream
-=======
-
-
-
->>>>>>> Stashed changes
 /* Site Title */
 
 #title {
@@ -233,8 +226,6 @@ h2 {
 
 /* = Container (columns)
 ---------------------------------------------------------------*/
-
-<<<<<<< HEAD
 .container {
   position: relative;
   background-color: red;
@@ -259,10 +250,10 @@ h2 {
 .column:last-child {
   margin: 0;
 }
-=======
+
 /* Page
 -----------------------------------------------------*/
->>>>>>> Couple of changes
+
 
 
 
