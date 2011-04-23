@@ -28,6 +28,12 @@ body {
 }
 
 
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 /* Site Title */
 
 #title {
@@ -51,10 +57,11 @@ body {
 
 #access {
 	position: relative;
-	display: inline;;
+	display: inline;
 	margin: 0 auto;
 	width: 940px;
 	font-size: .9em;
+	background-color: red;
 }
 
 #access  li {
@@ -62,6 +69,7 @@ body {
 	text-transform: capitalize;
 	float: left;
 }
+
 
 #access a {
 	color: #999;
@@ -226,6 +234,7 @@ h2 {
 /* = Container (columns)
 ---------------------------------------------------------------*/
 
+<<<<<<< HEAD
 .container {
   position: relative;
   background-color: red;
@@ -250,6 +259,11 @@ h2 {
 .column:last-child {
   margin: 0;
 }
+=======
+/* Page
+-----------------------------------------------------*/
+>>>>>>> Couple of changes
+
 
 
 
