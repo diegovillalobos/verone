@@ -181,6 +181,7 @@ input[type=submit]:hover {
 	float: right;
 	width: 222px;
 	display: block;
+	font-size: 1em;
 	list-style: none;	
 	margin: 0;
 	padding: 0 0 0 29px;
@@ -195,6 +196,7 @@ input[type=submit]:hover {
 	font-size: 1.142em;
 	color: #444;
 	font-weight: normal;	
+	padding-bottom: 10px;
 }
 
 #sidebar ul {
@@ -203,8 +205,21 @@ input[type=submit]:hover {
 	padding: 0 0 0 1.5em;
 }
 
+#sidebar a {
+	text-decoration: none;
+	color: #777;
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
 #sidebar ul li:before {
-	content: "\25ba";
+	content: ">";
+	font-weight: lighter;
+	font-size: .9em;
+	line-height: 18px;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -221,7 +236,9 @@ input[type=submit]:hover {
 	width: 642px;
 }
 
-#content img {
+#slideshow img {
+	clear: both;
+	margin: 40px 0;
 	position: relative;
 	border: solid thin #aaa;
 	box-shadow: 0px 3px 10px 2px #ddd;
@@ -325,7 +342,7 @@ h2 {
 *
 * When using more than one grid, remember to set the numberOfGrids 
 * option in the hashgrid.js file.
-*/
+*/			
 #grid.grid-1 div.vert{
 
     /* Vertical grid line colour for grid 1 */
