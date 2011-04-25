@@ -1,0 +1,259 @@
+/*
+Theme Name: Verone
+Version: 1.0
+*/
+
+
+/* Reset styles */
+
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: relative;
+}
+
+/* Begin Stylin */
+
+
+
+
+body {
+	color: #333;
+	font-family: "HelveticaNeueLT Pro 45 Lt", Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	line-height: 1.25;
+	width: 970px;
+	margin: 15px auto;
+}
+
+
+/* Site Title */
+
+#title {
+	float: left;
+	position: relative;
+}
+
+#title a {
+	background-color: #b40033;
+	font-size: 1.3em;
+	font-family: "HelveticaNeueLT Pro 35 Lt", Sans-Serif;
+	font-weight: lighter;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+	
+	
+/* = Navigation
+-------------------------------------------------------------- */
+
+#access {
+	position: relative;
+	display: inline;;
+	margin: 0 auto;
+	width: 940px;
+	font-size: .9em;
+}
+
+#access  li {
+	list-style: none;
+	text-transform: capitalize;
+	float: left;
+}
+
+#access a {
+	color: #999;
+	text-decoration: none;
+	padding-left: 13px;
+}
+
+#access a:after {
+	color: #ddd;
+	content: "|";
+	padding-left: 15px; 
+	line-height: 2.3em;
+}
+
+#access li:hover > a{
+	color: #ccc;
+}
+
+#access ul li.current_page_item > a{
+	color: #444;
+	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
+	font-weight: bolder;
+}
+
+
+/* = Search
+-----------------------------------------------------------------*/
+
+#search {
+	width: 220px;	
+	float: left;
+}
+	
+.widget_search label {
+	display: none;
+}
+
+#s:active {
+	border: none;
+}
+
+.widget_search #s {/* This keeps the search inputs in line */
+	background-color: #fff;
+	color: #777;
+	width: 100px;
+	height: 14px;
+	line-height: 10px;
+	padding: 0;
+	border: none;
+	border-bottom: solid thin #b40033;
+	position: relative;
+	top: 2px;
+	left: 65px;
+}
+
+.widget_search #s:hover {
+	background-color: #fff;
+	border-bottom: solid thin #b40033;
+}
+
+.widget_search #s:focus,
+.widget_search #s:active {
+	background-color: #fff;
+	border: solid thin #b40033;
+}
+
+input[type=submit] {
+	color: #999;
+	background-color: #fff;
+	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
+	font-size: .9em;
+	padding: 0;
+	height: 13px;
+	border: none;
+	position: relative;
+	top: 2px;
+	left: -90px;
+}
+
+input[type=submit]:hover {
+	color: #ccc;
+	cursor: pointer;
+}
+
+
+/* = Sidebar
+---------------------------------------------------------------*/
+
+#primary {
+	float: right;
+	overflow: hidden;
+	width: 220px;
+	top: 80px;
+}
+
+.widget-area h3 {
+	font-size: 1.2em;
+	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
+	font-weight: lighter;
+	line-height: 2.5em;
+	color: #444444;	
+}
+
+.widget-area ul {
+	line-height: 1.1em;	
+	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
+	color: #777777;	
+	font-size: .8em;
+}
+
+.widget-area ul a:before {
+	content: "\00BB";
+	color: #b40033;
+}
+
+.widget-area ul a {
+	text-decoration: none;
+	color: #777777;
+	
+}
+
+.widget-area ul p:before {
+		content: "\00BB";
+	color: #b40033;
+	
+}
+
+/* = Content
+---------------------------------------------------------------*/
+
+#content {
+	float: left;	
+	width: 100%;
+	top: 30em;
+}
+
+#content img {
+	position: absolute;
+	top: -25em;
+	border: solid thin #aaa;
+	box-shadow: 0px 3px 10px 2px #ddd;
+	margin-bottom: 200px;
+}
+
+h2 {
+	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
+	font-size: 1.5em;
+	line-height: 30px;
+	color: #b40033;
+}
+
+#content p {
+	font-size: 1em;
+	float: left;
+	width: 300px;
+	position: relative;
+	margin-right: 40px;
+}
+
+
+
+/* = Container (columns)
+---------------------------------------------------------------*/
+
+.container {
+  position: relative;
+  background-color: red;
+}
+
+// clearfix
+.container:after {
+  content: " ";
+  display: block;
+  position: relative;
+  clear: both;
+  float: none;
+}
+
+.column {
+  width: 300px; // or whatever you column width is
+  margin: 0 30px 0 0; // or whatever your gutters are
+  float: left;
+}
+
+// remove margin from last column
+.column:last-child {
+  margin: 0;
+}
+
+
+
+
+
+
+
