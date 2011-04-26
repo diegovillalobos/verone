@@ -1,5 +1,5 @@
-<ul id="sidebar" class="widget-area" role="complementary">
-	<?php if ( ! dynamic_sidebar( 'sidebar-widget-area' ) ) : ?>
+<ul id="sidebar2" class="widget-area" role="complementary">
+	<?php if ( ! dynamic_sidebar( 'post-sidebar-widget-area' ) ) : ?>
 		<li id="archives" class="widget-container">
 			<h3 class="widget-title"><?php _e( 'Archives', 'verone' ); ?></h3>
 			<ul>

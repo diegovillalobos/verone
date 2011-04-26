@@ -4,7 +4,8 @@ function register_verone_menus() {
   register_nav_menus(
     array(
     	'header-menu' => __( 'Header Menu' ),
-    	'sidebar-menu' => __( 'Sidebar Menu' )
+    	'sidebar-menu' => __( 'Sidebar Menu' ),
+    	'blog-sidebar' => __( 'Blog Sidebar')
     )
   );
 }
@@ -67,7 +68,18 @@ function verone_widgets_init() {
 			'after_title' => '</h3>',
 		) );
 	}
-}
+	// Area 3. located below the secondary widget area in the sidebar.
+		register_sidebar( array(
+			'name' => __( 'Blog Sidebar', 'verone' ),
+			'id' => 'blog-sidebar-widget-area',
+			'description' => __( 'This is where the sidebar widgets for the blog go', 'verone' ),
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+	}
+
 
 add_action( 'widgets_init', 'verone_widgets_init' );
 
@@ -83,6 +95,7 @@ add_action( 'widgets_init', 'verone_widgets_init' );
  */
 if ( ! isset( $content_width ) )
 	$content_width = 640;
+
 
 
 

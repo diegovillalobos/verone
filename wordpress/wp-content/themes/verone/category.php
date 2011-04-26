@@ -1,9 +1,7 @@
-<!-- This is where the loop for the posts is -->
-
-
-
 <?php get_header(); ?>
-	<section id="posts">
+
+<section id="category">
+	
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
 			<?php endif; ?>
 	</div>
@@ -13,6 +11,10 @@
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
+					<h1 class="page-title">
+						<?php printf( __( 'Category: <span class="category-title">%s</span>' ), '<span>' . single_cat_title( '', false ) . '</span>' );?>
+					</h1>
 							
 					<h2 class="entry-title">	
 									<?php 
@@ -31,6 +33,9 @@
 									
 					<div class="entry-content">
 						<?php 
+							 get_posts( $args = array(
+											'numberposts' => 2,
+											'orderby' => 'post_date'));
 						   the_content('read more');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
@@ -53,8 +58,8 @@
 					
 	
 		<?php endif; ?>
-		</div>
-	</section>
+		</div>	
+</section>
 
 
 <div id="posts_nav">

@@ -1,9 +1,7 @@
-<!-- This is where the loop for the posts is -->
-
-
-
 <?php get_header(); ?>
-	<section id="posts">
+
+<section id="category">
+	
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
 			<?php endif; ?>
 	</div>
@@ -13,6 +11,18 @@
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
+					<h1 class="page-title">
+						<?php if ( is_day() ) : ?>
+						<?php printf( __( 'Daily Archives:</span> <span class="archive-title">%s</span>'), get_the_date() ); ?>
+							<?php elseif ( is_month() ) : ?>
+						<?php printf( __( 'Monthly Archives:</span> <span class="archive-title">%s</span>'), get_the_date( 'F Y' ) ); ?>
+							<?php elseif ( is_year() ) : ?>
+						<?php printf( __( 'Yearly Archives: <span class="archive-title">%s</span>'), get_the_date( 'Y' ) ); ?>
+							<?php else : ?>
+						<?php _e( 'Blog Archives'); ?>
+						<?php endif; ?>
+					</h1>
 							
 					<h2 class="entry-title">	
 									<?php 
@@ -31,6 +41,9 @@
 									
 					<div class="entry-content">
 						<?php 
+							 get_posts( $args = array(
+											'numberposts' => 2,
+											'orderby' => 'post_date'));
 						   the_content('read more');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
@@ -53,8 +66,8 @@
 					
 	
 		<?php endif; ?>
-		</div>
-	</section>
+		</div>	
+</section>
 
 
 <div id="posts_nav">

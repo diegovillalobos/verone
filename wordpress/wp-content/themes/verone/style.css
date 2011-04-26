@@ -26,7 +26,7 @@ body {
 }
 
 
-#header, #middle, #footer {
+#header, #middle, #posts, #category, #searchpage, #footer {
 	display: block;
 	clear: both;
 	float: none;
@@ -36,6 +36,9 @@ body {
 #header:after,
 #navigation:after,
 #middle:after,
+#posts:after,
+#category:after,
+#searchpage:after,
 #footer:after,
 #home_columns:after {
   content: " ";
@@ -115,8 +118,7 @@ body {
 -----------------------------------------------------------------*/
 
 #search {
-	width: 220px;	
-	float: left;
+	width: 220px;
 }
 	
 .widget_search label {
@@ -131,13 +133,13 @@ body {
 	background-color: #fff;
 	color: #777;
 	width: 100px;
-	height: 14px;
-	line-height: 10px;
+	height: 1em;
+	line-height: .714em;
 	padding: 0;
 	border: none;
 	border-bottom: solid thin #b40033;
 	position: relative;
-	top: 2px;
+	top: 5px;
 	left: 65px;
 }
 
@@ -156,18 +158,30 @@ input[type=submit] {
 	color: #999;
 	background-color: #fff;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
-	font-size: 0.857em;
+	font-size: 1em;
 	padding: 0;
 	height: 13px;
 	border: none;
 	position: relative;
-	top: 2px;
 	left: -90px;
+	top: 5px;
 }
 
 input[type=submit]:hover {
 	color: #ccc;
 	cursor: pointer;
+}
+
+.search-title {
+	color: #b40033;
+	font-size: 1.6em;
+	line-height: .8em;
+}
+
+#post-0 p {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-bottom: 2em;
 }
 
 /* = Middle
@@ -186,6 +200,7 @@ input[type=submit]:hover {
 	margin: 0;
 	padding: 0 0 0 29px;
 	border-left: 1px solid #ccc;
+	color: #999999;
 }
 
 #sidebar .widget-container {
@@ -226,6 +241,61 @@ input[type=submit]:hover {
 	left: -1.5em;	
 	color: #b40033;
 }
+
+/* = Blog Sidebar
+--------------------------------------------------------------*/
+
+#blog_sidebar {
+	float: right;
+	width: 222px;
+	display: block;
+	font-size: 1em;
+	list-style: none;	
+	margin-top: 115px;
+	padding: 0 0 0 29px;
+	border-left: 1px solid #ccc;
+	color: #999999;
+}
+
+#blog_sidebar .widget-container {
+	padding: 0 0 2em;	
+}
+
+#blog_sidebar h3 {
+	font-size: 1.142em;
+	color: #444;
+	font-weight: normal;	
+	padding-bottom: 10px;
+}
+
+#blog_sidebar ul {
+	display: block;
+	list-style: none;	
+	padding: 0 0 0 1.5em;
+}
+
+#blog_sidebar a {
+	text-decoration: none;
+	color: #777;
+}
+
+#blog_sidebar a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+#blog_sidebar ul li:before {
+	content: ">";
+	font-weight: lighter;
+	font-size: .9em;
+	line-height: 18px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -1.5em;	
+	color: #b40033;
+}
+
 
 
 /* = Content
@@ -273,6 +343,151 @@ h2 {
 #home_columns .column:last-child {
 	margin: 0;
 }
+
+/* Posts
+---------------------------------------------------*/
+
+
+h2 {
+	font-size: 2.57em;
+	margin-bottom: .5em;
+	margin-top: 1.5em;
+}
+
+img {
+	clear: both;
+	position: relative;
+	border: solid thin #aaa;
+	box-shadow: 0px 3px 10px 2px #999;	
+}
+
+.entry-title a {
+	color: #b40033;
+	text-decoration: none;
+	font-weight: lighter;	
+}
+
+.entry-content {
+	color: #333333;
+	font-size: .857em;	
+	line-height: 1.285em;
+	font-weight: lighter;
+	line-height: 1.2em;
+	word-spacing: .3em;
+	width: 642px;
+}
+
+.entry-content a {
+	color: #b40033;	
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.entry-content a:after {
+	content: "\00BB";
+	color: #b40033;	
+	font-size: .8em;
+}
+
+.published {
+	color: #D8D8D8;
+	width: 20px;
+	position: relative;
+	margin-right: -53px;
+	float: right;
+	line-height: .9em;
+}
+
+
+.comments-notice {
+	clear: both;
+	margin-top: 5em;	
+	font-size: .714em;
+	font-weight: normal;
+	margin-bottom: 3em;
+	width: 642px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 2em;
+	
+}
+
+.comments-notice a {
+	color: #b40033;	
+	text-decoration: none;
+	float: right;
+}
+
+#posts_nav {
+	display: block;
+	clear: both;
+	width: 642px;
+	margin-top: .5em;	
+	background-color: red;
+	margin-left: 172px;
+}
+
+.previous-post-link a {
+	color: #999;
+	text-decoration: none;	
+	font-size: 1.142em;
+	font-weight: normal;
+	border-right: 1px solid #999;
+	padding-right: 10px;
+	float: left;
+}
+
+.previous-post-link a:before {
+	content: "\00AB";
+	color: #b40033;
+	font-size: .8em;
+}
+
+
+.next-post-link a {
+	color: #999;
+	text-decoration: none;	
+	font-size: 1.142em;
+	font-weight: normal;
+	border-left: 1px solid #999;
+	padding-left: 10px;	
+	float: right;
+}
+
+.next-post-link a:after {
+	content: "\00BB";
+	color: #b40033;
+	font-size: .8em;	
+}
+
+/*	= Category & Archive
+---------------------------------------------------*/
+
+.page-title {
+	color: #444;	
+	font-size: 1.14em;
+	font-weight: lighter;
+	opacity: .4;
+	margin-top: 2em;
+	margin-bottom: -1.2em;
+}
+
+.category-title {
+	color: #b40033;
+	font-size: 1.6em;
+	display: block;
+	line-height: .8em;
+	
+}
+
+.archive-title {
+	color: #b40033;
+	font-size: 1.6em;
+	display: block;
+	line-height: .8em;	
+}
+
+
+
 
 
 /* Footer
