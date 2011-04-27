@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-ssss
 
 <div id="content">
 
@@ -35,6 +34,5 @@ ssss
 
 
 </div>
-	
-	
+					
 <?php get_sidebar(); ?>

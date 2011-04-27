@@ -31,7 +31,7 @@
 									
 					<div class="entry-content">
 						<?php 
-						   the_content('read more');
+						   the_content('Continue Reading');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
 					</div>		
@@ -40,6 +40,7 @@
 						<?php
 							comments_popup_link( __( 'Leave a comment', '1 Comment', '% Comments' ) );
 						?>	
+						
 					</div>	
 							
 						
@@ -54,13 +55,13 @@
 	
 		<?php endif; ?>
 		</div>
-	</section>
+
 
 
 <div id="posts_nav">
 	<span class="previous-post-link"><?php previous_post('%', ' Previous Post', 'no'); ?> </span>			
 	<span class="next-post-link"><?php next_post('%', 'Next Post ', 'no'); ?></span>	
 </div>	
-
+	</section>
 
 <?php get_footer() ?>
