@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer {
+#header, #middle, #posts, #category, #searchpage, #footer, #contact-form {
 	display: block;
 	clear: both;
 	float: none;
@@ -39,7 +39,8 @@ body {
 #category:after,
 #searchpage:after,
 #footer:after,
-#home_columns:after {
+#home_columns:after,
+#contact_form:after {
   content: " ";
   display: block;
   position: relative;
@@ -416,7 +417,7 @@ h2.entry-title {
 	margin-top: 5em;	
 	font-size: .714em;
 	font-weight: normal;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	width: 642px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 2em;
@@ -434,7 +435,11 @@ h2.entry-title {
 	position: relative;
 	display: block;
 	width: 642px;
+<<<<<<< Updated upstream
 	background-color: red;
+=======
+	margin-left: 172px;
+>>>>>>> Stashed changes
 }
 
 .previous-post-link a {
