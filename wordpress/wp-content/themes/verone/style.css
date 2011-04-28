@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #contact-form {
+#header, #middle, #posts, #category, #searchpage, #footer, #single {
 	display: block;
 	clear: both;
 	float: none;
@@ -40,6 +40,7 @@ body {
 #searchpage:after,
 #footer:after,
 #home_columns:after,
+#single:after,
 #contact_form:after {
   content: " ";
   display: block;
@@ -442,6 +443,15 @@ h2.entry-title {
 >>>>>>> Stashed changes
 }
 
+#posts_nav_category {
+	clear: both;
+	position: relative;
+	display: block;
+	width: 642px;
+	background-color: red;
+	margin-left: 185px;
+}
+
 .previous-post-link a {
 	color: #999;
 	float: left;
@@ -503,6 +513,99 @@ h2.entry-title {
 	display: block;
 	line-height: .8em;	
 }
+
+/* Comments
+---------------------------------------------------*/
+#commentform, #comments, #comment {
+	width: 637px;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-subject,
+.comment-form-comment,
+.form-submit {
+	width: 320px;
+	font-size: 1.5em;
+	display: block;
+	line-height: 2em;
+	border-bottom: 2em;
+	margin-bottom: .8em;
+	
+}
+
+.comment-form-author:hover,
+.comment-form-email:hover,
+.comment-form-url:hover,
+.comment-form-subject:hover,
+.comment-form-comment:hover {
+	color: #b40033;
+	display: block;
+}
+
+#author, #email, #url, #subject {
+	color: #444444;
+	font-weight: lighter;
+	display: block;
+	width: 301px;
+}
+
+#author:focus,
+#email:focus,
+#url:focus,
+#subject:focus,
+#comment:focus {
+	border: 1px solid #b40033;	
+}
+
+.comment-form-author {
+}
+
+.comment-form-email {
+	
+}
+
+.comment-form-url {
+	
+}
+
+.comment-form-subject {
+}
+
+.required:after, .required {
+	content: "required";	
+	color: #cccccc;
+	font-size: .8em;
+}
+
+.comment-form-comment {
+		
+}
+
+#reply-title {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#submit {
+	display: block;
+	background-color: #b40033;
+	color: white;	
+	float: right;
+	font-size: 1.5em;
+	padding: 5px 15px;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+.form-submit {
+	width: 637px;
+	float: right;
+}
+
+
+
 
 
 /* Footer

@@ -99,6 +99,13 @@ if ( ! isset( $content_width ) )
 
 
 
+function my_fields($fields) {
+$fields['subject'] = '<p class="comment-form-subject"><label for="subject">' . ( 'Subject' ) . '</label>' .
+		            '<input id="subject" name="subject" type="text" value="' . esc_attr( $commenter['comment_author_subject'] ) . '" size="30" /></p>';
+
+return $fields;
+}
+add_filter('comment_form_default_fields','my_fields');
 
 
 
