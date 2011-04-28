@@ -1,8 +1,7 @@
 <?php get_header(); ?>
-
-	<div id="content">
+	<section id="single">
 		<?php get_template_part( 'loop', 'single' );
 		?>
-	</div>
+	</section>	
 	
 <?php get_footer();  ?>

@@ -26,13 +26,13 @@
 									
 					<div class="entry-content">
 						<?php 
-						   the_content('Continue Reading');
+						   the_content('read more');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
 					</div>		
 							
 					<div class="comments-notice">
-						<?php comments_template( '', true ); ?>
+						<?php comments_template( $file ); ?>
 						<?php
 							comments_popup_link( __( '', '1 Comment', '% Comments' ) );
 						?>	
