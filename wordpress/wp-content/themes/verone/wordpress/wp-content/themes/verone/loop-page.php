@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
-
 <div id="content">
 
+<?php if(have_posts()) : ?>
+	
+	<?php if ((wp_query-post_count) > 1 : ?>
+		<?php the excerpt() ?>
 
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
@@ -31,6 +34,5 @@
 
 
 </div>
-	
-	
+					
 <?php get_sidebar(); ?>

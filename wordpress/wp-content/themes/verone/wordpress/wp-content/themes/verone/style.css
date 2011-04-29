@@ -13,74 +13,101 @@ body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
 	position: relative;
 }
 
-/* Begin Stylin */
 
 
-
-
+/* Begin Styling */
 body {
 	color: #333;
-	font-family: "HelveticaNeueLT Pro 45 Lt", Helvetica, Arial, Sans-Serif;
+	font-family: Helvetica, Arial, Sans-Serif;
 	font-size: 14px;
 	line-height: 1.25;
-	width: 970px;
-	margin: 15px auto;
+	margin: 0;
 }
+
+
+#header, #middle, #posts, #category, #searchpage, #footer, #contact-form {
+	display: block;
+	clear: both;
+	float: none;
+	width: 978px;
+	margin: 0 auto;	
+}	
+#header:after,
+#navigation:after,
+#middle:after,
+#posts:after,
+#category:after,
+#searchpage:after,
+#footer:after,
+#home_columns:after,
+#contact_form:after {
+  content: " ";
+  display: block;
+  position: relative;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: -1px 0 0;
+  padding: 0;
+  background: transparent;
+}	
+	
+/* = Header
+-------------------------------------------------------------- */
 
 
 /* Site Title */
-
-#title {
+#site_title {
 	float: left;
-	position: relative;
-}
-
-#title a {
-	background-color: #b40033;
-	font-size: 1.3em;
-	font-family: "HelveticaNeueLT Pro 35 Lt", Sans-Serif;
+	font-size: 1.285em;
 	font-weight: lighter;
+	margin: 0;
+	padding: 0;
+}
+
+#site_title a {
+	background-color: #b40033;
 	color: #fff;
-	padding: 15px;
+	padding: 17px;
 	text-decoration: none;
+	display: block;
 }
-	
-	
-/* = Navigation
--------------------------------------------------------------- */
 
-#access {
+#navigation {
 	position: relative;
-	display: inline;;
-	margin: 0 auto;
-	width: 940px;
-	font-size: .9em;
+	display: block;	
+	margin: 0;
+	font-size: 0.857em;
+	padding: 16px 0 0;
+	float: left;
 }
 
-#access  li {
+#navigation  li {
 	list-style: none;
 	text-transform: capitalize;
 	float: left;
 }
 
-#access a {
+
+#navigation a {
 	color: #999;
 	text-decoration: none;
 	padding-left: 13px;
 }
 
-#access a:after {
+#navigation a:after {
 	color: #ddd;
 	content: "|";
 	padding-left: 15px; 
 	line-height: 2.3em;
 }
 
-#access li:hover > a{
+#navigation li:hover > a{
 	color: #ccc;
 }
 
-#access ul li.current_page_item > a{
+#navigation li.current_page_item > a{
 	color: #444;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
 	font-weight: bolder;
@@ -91,8 +118,7 @@ body {
 -----------------------------------------------------------------*/
 
 #search {
-	width: 220px;	
-	float: left;
+	width: 220px;
 }
 	
 .widget_search label {
@@ -107,13 +133,13 @@ body {
 	background-color: #fff;
 	color: #777;
 	width: 100px;
-	height: 14px;
-	line-height: 10px;
+	height: 1em;
+	line-height: .714em;
 	padding: 0;
 	border: none;
 	border-bottom: solid thin #b40033;
 	position: relative;
-	top: 2px;
+	top: 5px;
 	left: 65px;
 }
 
@@ -132,13 +158,13 @@ input[type=submit] {
 	color: #999;
 	background-color: #fff;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
-	font-size: .9em;
+	font-size: 1em;
 	padding: 0;
 	height: 13px;
 	border: none;
 	position: relative;
-	top: 2px;
 	left: -90px;
+	top: 5px;
 }
 
 input[type=submit]:hover {
@@ -146,114 +172,434 @@ input[type=submit]:hover {
 	cursor: pointer;
 }
 
+.search-title {
+	color: #b40033;
+	font-size: 1.6em;
+	line-height: .8em;
+}
+
+#post-0 p {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-bottom: 2em;
+}
+
+/* = Middle
+---------------------------------------------------------------*/
+
+
 
 /* = Sidebar
 ---------------------------------------------------------------*/
-
-#primary {
+#sidebar {
 	float: right;
-	overflow: hidden;
-	width: 220px;
-	top: 80px;
+	width: 222px;
+	display: block;
+	overflow: 
+	font-size: 1em;
+	list-style: none;	
+	margin: -10px 31px;
+	padding: 12px 0 0 49px;
+	border-left: 1px solid #ccc;
+	color: #999999;
 }
 
-.widget-area h3 {
-	font-size: 1.2em;
-	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
-	font-weight: lighter;
-	line-height: 2.5em;
-	color: #444444;	
+#sidebar .widget-container {
+	padding: 0 0 2em;	
 }
 
-.widget-area ul {
-	line-height: 1.1em;	
-	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
-	color: #777777;	
-	font-size: .8em;
+#sidebar h3 {
+	font-size: 1.142em;
+	color: #444;
+	font-weight: normal;	
+	padding-bottom: 10px;
 }
 
-.widget-area ul a:before {
-	content: "\00BB";
-	color: #b40033;
+#sidebar ul {
+	display: block;
+	list-style: none;	
+	padding: 0 0 0 1.5em;
 }
 
-.widget-area ul a {
+#sidebar a {
 	text-decoration: none;
-	color: #777777;
-	
+	color: #777;
 }
 
-.widget-area ul p:before {
-		content: "\00BB";
-	color: #b40033;
-	
+#sidebar a:hover {
+	text-decoration: none;
+	color: #ccc;
 }
+
+#sidebar ul li:before {
+	content: ">";
+	font-weight: lighter;
+	font-size: .9em;
+	line-height: 18px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -1.5em;	
+	color: #b40033;
+}
+
+/* = Blog Sidebar
+--------------------------------------------------------------*/
+
+#blog_sidebar {
+	float: right;
+	width: 222px;
+	display: block;
+	font-size: 1em;
+	list-style: none;	
+	margin: 118px 33px 0 0;
+	padding: 15px 0 0 49px;
+	border-left: 1px solid #ccc;
+	color: #bbb;
+}
+
+#blog_sidebar .widget-container {
+	padding: 0 0 2em;	
+}
+
+#blog_sidebar h3 {
+	font-size: 1.142em;
+	color: #444;
+	font-weight: normal;	
+	padding-bottom: 10px;
+}
+
+#blog_sidebar ul {
+	display: block;
+	list-style: none;	
+	padding: 0 0 0 1.5em;
+}
+
+#blog_sidebar a {
+	text-decoration: none;
+	color: #777;
+}
+
+#blog_sidebar a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+#blog_sidebar ul li:before {
+	content: ">";
+	font-weight: lighter;
+	font-size: .9em;
+	line-height: 18px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -1.5em;	
+	color: #b40033;
+}
+
+
 
 /* = Content
 ---------------------------------------------------------------*/
 
-#content {
-	float: left;	
-	width: 100%;
-	top: 30em;
+#content {	
+	float: left;
+	width: 642px;
+	margin: 0;
 }
 
-#content img {
-	position: absolute;
-	top: -25em;
+#slideshow img {
+	clear: both;
+	margin: 40px 0;
+	position: relative;
 	border: solid thin #aaa;
 	box-shadow: 0px 3px 10px 2px #ddd;
-	margin-bottom: 200px;
+}
+
+#slideshow img.nav {
+	clear: both;
+	margin: 10px auto 80px auto;
+	position: relative;
+	border: none;
+	box-shadow: none;
+	width: 415px;
 }
 
 h2 {
-	font-family: "HelveticaNeueLT Pro 55 Rm", Sans-Serif;
 	font-size: 1.5em;
-	line-height: 30px;
+	line-height: 1.428em;
 	color: #b40033;
 }
 
 #content p {
-	font-size: 1em;
-	float: left;
-	width: 300px;
-	position: relative;
-	margin-right: 40px;
 }
 
 
 
-/* = Container (columns)
+/* = Home columns
 ---------------------------------------------------------------*/
-
-.container {
-  position: relative;
-  background-color: red;
+#home_columns {
+	position: relative;
+	clear: both;
 }
 
-// clearfix
-.container:after {
-  content: " ";
-  display: block;
-  position: relative;
-  clear: both;
-  float: none;
+#home_columns .column {
+	display: block;
+	position: relative;
+	width: 306px;
+	margin: 0 30px 0 0;
+	float: left;
 }
 
-.column {
-  width: 300px; // or whatever you column width is
-  margin: 0 30px 0 0; // or whatever your gutters are
-  float: left;
+#home_columns .column:last-child {
+	margin: 0;
 }
 
-// remove margin from last column
-.column:last-child {
-  margin: 0;
+/* Posts
+---------------------------------------------------*/
+
+img {
+	clear: both;
+	width: 100%;
+	position: relative;
+	border: solid thin #fff;
+	box-shadow: 0px 2px 6px 2px #bbb;
+}
+
+h2.entry-title {
+	font-size: 2.57em;
+	margin-top: 1.5em;
+	margin-bottom: 15px;
+}
+
+.entry-title a {
+	color: #b40033;
+	text-decoration: none;
+	font-weight: lighter;	
+}
+
+.entry-content {
+	color: #333333;
+	font-size: .857em;	
+	line-height: 1.285em;
+	font-weight: lighter;
+	line-height: 1.2em;
+	word-spacing: .3em;
+	width: 642px;
+}
+
+.entry-content a {
+	color: #b40033;	
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.entry-content a:after {
+	content: "\00BB";
+	color: #b40033;	
+	font-size: .8em;
+}
+
+.meta-info {
+	color: #ccc;
+	width: 20px;
+	font-size: small;
+	position: relative;
+	margin: 0 -30px;
+	font-weight: lighter;
+	float: right;
+	line-height: .9em;
 }
 
 
+.comments-notice {
+	clear: both;
+	margin-top: 5em;	
+	font-size: .714em;
+	font-weight: normal;
+	margin-bottom: 1em;
+	width: 642px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 2em;
+	
+}
+
+.comments-notice a {
+	color: #b40033;	
+	text-decoration: none;
+	float: right;
+}
+
+#posts_nav {
+	clear: both;
+	position: relative;
+	display: block;
+	width: 642px;
+<<<<<<< Updated upstream
+	background-color: red;
+=======
+	margin-left: 172px;
+>>>>>>> Stashed changes
+}
+
+.previous-post-link a {
+	color: #999;
+	float: left;
+	text-decoration: none;	
+	font-size: 1.142em;
+	font-weight: normal;
+	border-right: 1px solid #999;
+	padding-right: 10px;
+}
+
+.previous-post-link a:before {
+	content: "\00AB";
+	color: #b40033;
+	font-size: .8em;
+	vertical-align: 2px;
+}
 
 
+.next-post-link a {
+	color: #999;
+	text-decoration: none;	
+	font-size: 1.142em;
+	font-weight: normal;
+	border-left: 1px solid #999;
+	padding-left: 10px;	
+	float: right;
+}
+
+.next-post-link a:after {
+	content: "\00BB";
+	color: #b40033;
+	font-size: .8em;	
+	vertical-align: 2px;
+}
+
+/*	= Category & Archive
+---------------------------------------------------*/
+
+.page-title {
+	color: #444;	
+	font-size: 1.14em;
+	font-weight: lighter;
+	opacity: .4;
+	margin-top: 2em;
+	margin-bottom: -1.2em;
+}
+
+.category-title {
+	color: #b40033;
+	font-size: 1.6em;
+	display: block;
+	line-height: .8em;
+	
+}
+
+.archive-title {
+	color: #b40033;
+	font-size: 1.6em;
+	display: block;
+	line-height: .8em;	
+}
 
 
+/* Footer
+----------------------------------------------------*/
 
+#footer {
+	text-align: center;
+	color: #999;
+	font-size: 0.714em;
+	padding: 30px 0 0 0;	
+}
+/* Page
+-----------------------------------------------------*/
+/* Hash Grid
+-----------------------------------------------------*/
+/**
+ * Grid
+ */
+#grid{
+
+    /* Dimensions - same width as your grid with gutters */
+    width: 978px;
+
+    /* Grid (left-aligned)
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
+
+    /* Grid (centered) */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -489px;
+
+}
+
+/**
+ * Vertical grid lines
+ *
+ * Set the column width taking the borders into consideration,
+ * and use margins to set column gutters.
+ */
+#grid div.vert{
+
+    width: 54px;
+    border-width: 0;
+    margin-left: 30px;
+
+}
+
+#grid div.vert.first-line{
+
+    margin-left: 0;
+
+}
+
+
+/**
+ * Horizontal grid lines, defined by your base line height
+ *
+ * Remember, the CSS properties that define the box model:
+ * visible height = height + borders + margins + padding
+ */
+#grid div.horiz{
+
+    /* 20px line height */
+    height: 19px;
+    border-bottom: 1px dotted darkgray;
+    margin: 0;
+    padding: 0;
+
+}
+
+/**
+* Classes for multiple grids
+*
+* When using more than one grid, remember to set the numberOfGrids 
+* option in the hashgrid.js file.
+*/			
+#grid.grid-1 div.vert{
+
+    /* Vertical grid line colour for grid 1 */
+    background: darkturquoise;
+    opacity: 0.1;
+
+}
+#grid.grid-2{
+
+    /* Adjustments */
+    padding: 0 160px;
+    width: 660px;
+
+}
+#grid.grid-2 div.vert{
+
+    /* Vertical grid line colour for grid 2 */
+    border-color: crimson;
+
+}
