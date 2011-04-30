@@ -435,11 +435,8 @@ h2.entry-title {
 	position: relative;
 	display: block;
 	width: 642px;
-<<<<<<< Updated upstream
 	background-color: red;
-=======
 	margin-left: 172px;
->>>>>>> Stashed changes
 }
 
 .previous-post-link a {
@@ -504,7 +501,91 @@ h2.entry-title {
 	line-height: .8em;	
 }
 
+/* Comments
+----------------------------------------------------*/
+#commentform, #comments, #comment {
+	width: 637px;
+}
 
+.comment-form-author,
+.comment-form-author,
+.comment-form-url,
+.comment-form-subject,
+.comment-form-comment,
+.form-submit {
+	width: 320px;
+	font-size: 1.5em;
+	display: block;
+	line-height: 2em;
+	border-bottom: .2em;
+	margin-bottom: .8em;
+}
+
+.comment-form-author:hover,
+.comment-form-author:hover,
+.comment-form-url:hover,
+.comment-form-subject:hover,
+.comment-form-comment:hover {
+	color: #b40033;
+	display: block;
+}
+
+#author, #email, #url, #subject {
+	color: #444;
+	font-weight: lighter;
+	display: block;
+	width: 301px;
+}
+
+#author:focus,
+#email:focus,
+#url:focus,
+#subject:focus,
+#comments:focus {
+	border: 1px solid #b40033;
+}
+
+.comment-form-author {
+}
+
+.comment-form-email {
+}
+
+.comment-form-url {
+}
+
+.comment-form-subject {
+}
+
+.comment-form-comment {
+}
+
+.required:after, .required {
+	content: "required";
+	color: #ccc;
+	font-size: .8em;
+}
+
+#reply-title {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#submit {
+	display: block;
+	background-color: #b40033;
+	color: #fff;
+	float: right;
+	font-size: 1.5em;
+	padding: 5px 15px;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+.form-submit {
+	width: 637px;
+	float: right;
+}
 /* Footer
 ----------------------------------------------------*/
 
