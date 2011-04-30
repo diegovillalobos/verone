@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #contact-form {
+#header, #middle, #posts, #category, #searchpage, #footer, #single {
 	display: block;
 	clear: both;
 	float: none;
@@ -40,6 +40,7 @@ body {
 #searchpage:after,
 #footer:after,
 #home_columns:after,
+#single:after,
 #contact_form:after {
   content: " ";
   display: block;
@@ -439,6 +440,15 @@ h2.entry-title {
 	margin-left: 172px;
 }
 
+#posts_nav_category {
+	clear: both;
+	position: relative;
+	display: block;
+	width: 642px;
+	background-color: red;
+	margin-left: 185px;
+}
+
 .previous-post-link a {
 	color: #999;
 	float: left;
@@ -503,12 +513,13 @@ h2.entry-title {
 
 /* Comments
 ----------------------------------------------------*/
+
 #commentform, #comments, #comment {
 	width: 637px;
 }
 
 .comment-form-author,
-.comment-form-author,
+.comment-form-email,
 .comment-form-url,
 .comment-form-subject,
 .comment-form-comment,
@@ -517,12 +528,13 @@ h2.entry-title {
 	font-size: 1.5em;
 	display: block;
 	line-height: 2em;
-	border-bottom: .2em;
+	border-bottom: 2em;
 	margin-bottom: .8em;
+	
 }
 
 .comment-form-author:hover,
-.comment-form-author:hover,
+.comment-form-email:hover,
 .comment-form-url:hover,
 .comment-form-subject:hover,
 .comment-form-comment:hover {
@@ -541,8 +553,8 @@ h2.entry-title {
 #email:focus,
 #url:focus,
 #subject:focus,
-#comments:focus {
-	border: 1px solid #b40033;
+#comment:focus {
+	border: 1px solid #b40033;	
 }
 
 .comment-form-author {
@@ -586,6 +598,7 @@ h2.entry-title {
 	width: 637px;
 	float: right;
 }
+
 /* Footer
 ----------------------------------------------------*/
 

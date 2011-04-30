@@ -2,6 +2,6 @@
 <section id="single">
 		<?php get_template_part( 'loop', 'single' );
 		?>
-</section>	
-	
+
+</section>
 <?php get_footer();  ?>
