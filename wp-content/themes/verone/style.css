@@ -521,12 +521,8 @@ h2.entry-title {
 }
 
 /* Comments
-<<<<<<< HEAD
 ----------------------------------------------------*/
 
-=======
----------------------------------------------------*/
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 #commentform, #comments, #comment {
 	width: 637px;
 }
@@ -556,11 +552,8 @@ h2.entry-title {
 }
 
 #author, #email, #url, #subject {
-<<<<<<< HEAD
+
 	color: #444;
-=======
-	color: #444444;
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 	font-weight: lighter;
 	display: block;
 	width: 301px;
@@ -578,23 +571,14 @@ h2.entry-title {
 }
 
 .comment-form-email {
-<<<<<<< HEAD
 }
 
 .comment-form-url {
-=======
-	
-}
-
-.comment-form-url {
-	
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 }
 
 .comment-form-subject {
 }
 
-<<<<<<< HEAD
 .comment-form-comment {
 }
 
@@ -604,7 +588,6 @@ h2.entry-title {
 	font-size: .8em;
 }
 
-=======
 .required:after, .required {
 	content: "required";	
 	color: #cccccc;
@@ -615,7 +598,6 @@ h2.entry-title {
 		
 }
 
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 #reply-title {
 	font-size: 2em;
 	margin-bottom: 1em;
@@ -624,11 +606,7 @@ h2.entry-title {
 #submit {
 	display: block;
 	background-color: #b40033;
-<<<<<<< HEAD
 	color: #fff;
-=======
-	color: white;	
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 	float: right;
 	font-size: 1.5em;
 	padding: 5px 15px;
@@ -640,13 +618,6 @@ h2.entry-title {
 	width: 637px;
 	float: right;
 }
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 
 /* Footer
 ----------------------------------------------------*/
