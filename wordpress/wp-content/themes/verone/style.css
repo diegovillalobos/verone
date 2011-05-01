@@ -436,6 +436,7 @@ h2.entry-title {
 	position: relative;
 	display: block;
 	width: 642px;
+<<<<<<< Updated upstream
 	background-color: red;
 	margin-left: 172px;
 }
@@ -447,9 +448,20 @@ h2.entry-title {
 	width: 642px;
 	background-color: red;
 	margin-left: 185px;
+=======
+	margin-left: 172px;
+>>>>>>> Stashed changes
 }
 
 #posts_nav_category {
+	clear: both;
+	position: relative;
+	display: block;
+	width: 642px;
+	margin-left: 185px;
+}
+
+#posts_nav_archive {
 	clear: both;
 	position: relative;
 	display: block;
