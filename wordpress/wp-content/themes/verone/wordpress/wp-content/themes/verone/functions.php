@@ -100,12 +100,21 @@ if ( ! isset( $content_width ) )
 
 
 function my_fields($fields) {
+<<<<<<< HEAD
+	$fields['subject'] = '<p class="comment-form-subject"><label for="subject">' . __( 'Subject' ) . '</label><input id="subject" name="subject" type="text" value="' . esc_attr( $commenter['comment_author_subject'] ) . '" size="30" /></p>';
+	
+	return $fields;
+}
+add_filter('comment_form_default_fields','my_fields');
+=======
 $fields['subject'] = '<p class="comment-form-subject"><label for="subject">' . ( 'Subject' ) . '</label>' .
-						'input id="subject" name="subject" type="text" value="' . esc_attr( $commenter[ 'comment_author_subject'] ) . '"size="30" /></p>';
+		            '<input id="subject" name="subject" type="text" value="' . esc_attr( $commenter['comment_author_subject'] ) . '" size="30" /></p>';
 
 return $fields;
 }
 add_filter('comment_form_default_fields','my_fields');
+
+>>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
 
 
 
