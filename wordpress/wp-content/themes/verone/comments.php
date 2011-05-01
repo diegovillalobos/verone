@@ -11,10 +11,6 @@
     'label_submit'         => __( 'Send' ),
 								)
 						); 
-<<<<<<< HEAD
-?>
-=======
 ?>
 
 </div><!-- #comments -->
->>>>>>> 1e5d1b3c160ca6789acee642cd83586c06d2cbfc
