@@ -62,7 +62,7 @@
 </section>
 
 
-<div id="posts_nav">
+<div id="posts_nav_category">
 	<span class="previous-post-link"><?php previous_post('%', ' Previous Post', 'no'); ?> </span>			
 	<span class="next-post-link"><?php next_post('%', 'Next Post ', 'no'); ?></span>	
 </div>	
