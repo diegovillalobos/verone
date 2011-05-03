@@ -1,7 +1,3 @@
-<!-- This is where the loop for the posts is -->
-
-
-
 <?php get_header(); ?>
 	<section id="posts">
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
@@ -31,7 +27,7 @@
 									
 					<div class="entry-content">
 						<?php 
-						   the_content('read more');
+						   the_excerpt('read more');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
 					</div>		
