@@ -98,6 +98,23 @@ if ( ! isset( $content_width ) )
 
 
 
+function new_excerpt_more($more) {
+       global $post;
+	return '<a href="'. get_permalink($post->ID) . '"> read more </a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function new_excerpt_length($length) {
+	return 100;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+
+
+
+
+
+
 
 function my_fields($fields) {
 	$fields['subject'] = '<p class="comment-form-subject"><label for="subject">' . __( 'Subject' ) . '</label><input id="subject" name="subject" type="text" value="' . esc_attr( $commenter['comment_author_subject'] ) . '" size="30" /></p>';
@@ -131,3 +148,8 @@ function verone_comment($comment, $args, $depth) {
      </div>
 <?php
         }
+        
+        
+        
+        
+        

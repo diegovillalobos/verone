@@ -359,6 +359,7 @@ h2 {
 /* Posts
 ---------------------------------------------------*/
 
+
 img {
 	clear: both;
 	width: 100%;
@@ -436,8 +437,6 @@ h2.entry-title {
 	position: relative;
 	display: block;
 	width: 642px;
-	background-color: red;
-	margin-left: 172px;
 }
 
 #posts_nav_category {

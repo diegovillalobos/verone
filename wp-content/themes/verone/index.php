@@ -7,7 +7,7 @@
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
 			<?php endif; ?>
 	</div>
-	
+	asass
 		<div id="content">	
 		
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
@@ -31,7 +31,7 @@
 									
 					<div class="entry-content">
 						<?php 
-						   the_content('Continue Reading');
+						   the_content('read more');
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
 						 ?>
 					</div>		

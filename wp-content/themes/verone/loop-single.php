@@ -25,17 +25,12 @@
 					</p>
 									
 					<div class="entry-content">
-						<?php 
-						   the_content('read more');
+						<?php 							
+						  the_content();
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')	
 						 ?>
 					</div>
-					
-						 
-					<div class="commentlist">
-						 <?php wp_list_comments(array('style' => 'div')); ?>
-					</div>	
-									
+						
 					<div class="comments-notice">
 						<?php comments_template( $file ); ?>
 						<?php
@@ -43,7 +38,10 @@
 						?>	
 						
 					</div>	
-							
+					
+					<div class="commentlist">
+						 <?php wp_list_comments(); ?>
+					</div>			
 						
 															
 				</div>
