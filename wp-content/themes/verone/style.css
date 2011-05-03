@@ -155,7 +155,7 @@ body {
 	border: solid thin #b40033;
 }
 
-input[type=submit] {
+#search input[type=submit] {
 	color: #999;
 	background-color: #fff;
 	font-family: "HelveticaNeueLT Pro 45 Lt", Sans-Serif;
@@ -168,7 +168,7 @@ input[type=submit] {
 	top: 5px;
 }
 
-input[type=submit]:hover {
+#search input[type=submit]:hover {
 	color: #ccc;
 	cursor: pointer;
 }
@@ -530,22 +530,98 @@ h2.entry-title {
 /* Comments
 ----------------------------------------------------*/
 
-#commentform, #comments, #comment {
+#commentform, #comments, #comment, .commentlist, .form-submit {
 	width: 637px;
+}
+
+#content {
+	float: left;
+	border-bottom: thin dashed #ccc;	
+	margin-bottom: 1em;
+}
+
+
+/* Comments list */
+
+.commentlist {
+	line-height: 1.5em;
+	clear: both;
+	margin-bottom: 2em;
+	margin-top: 5em;
+	font-size: .9em;
+	
+}
+
+.commentlist p {
+	line-height: 1.4em;	
+	word-spacing: .2em;
+	color: #444;
+	padding: 1em;
+}
+
+.commentlist .even {
+	background-color: #fff0f0;
+}
+
+.commentlist .odd .comment-meta {
+	border-bottom: thin solid #E8E8E8;
+}
+
+.commentlist li {
+	margin-left: 1.5em;	
+	margin-bottom: 1.5em;
+}
+
+.avatar  {
+	width: 2.5em;
+}
+
+.comment-meta {
+	border-bottom: thin solid #fff;
+	padding: 1em;
+}
+
+.comment-meta a{
+	text-decoration: none;
+	color: #999;
+	font-size: .7em;
+}
+.comment_author {
+	color: #b40033;
+}
+
+.comment-awaiting-moderation {
+}
+
+/* Comment Submit */
+#reply-title {
+	font-size: 2em;
+	margin-top: 3em;
+	clear: both;
+	margin-bottom: 1em;
+}
+
+.logged-in-as {
+	margin-bottom: 1.5em;
+	font-size: .8em;
+}
+
+.logged-in-as a {
+	color: #b40033;
+	text-decoration: none;
 }
 
 .comment-form-author,
 .comment-form-email,
 .comment-form-url,
 .comment-form-subject,
-.comment-form-comment,
-.form-submit {
+.comment-form-comment,{
 	width: 320px;
 	font-size: 1.5em;
 	display: block;
 	line-height: 2em;
 	border-bottom: 2em;
-	margin-bottom: .8em;
+	margin-bottom: .9em;
 	
 }
 
@@ -563,6 +639,7 @@ h2.entry-title {
 	font-weight: lighter;
 	display: block;
 	width: 301px;
+	margin-bottom: 1em;
 }
 
 #author:focus,
@@ -590,30 +667,42 @@ h2.entry-title {
 
 .required:after, .required {
 	content: "required";
-	color: #ccc;
+	color: #989898;
 	font-size: .8em;
 }
 
-#reply-title {
-	font-size: 2em;
-	margin-bottom: 1em;
-}
-
 #submit {
+	clear: both;
 	display: block;
 	background-color: #b40033;
 	color: #fff;
-	float: right;
-	font-size: 1.5em;
-	padding: 5px 15px;
+	font-size: 1em;
+	padding: .3em .3em;
+	font-weight: lighter;
+	border: none;
 	margin-bottom: 2em;
-	font-weight: bold;
+	float: right;
+	margin-right: -5px;
 }
 
 .form-submit {
+	clear: both;
+	display: block;
 	width: 637px;
-	float: right;
 }
+
+
+
+
+
+
+/* Comments List 
+---------------------------------------------------*/
+
+
+
+
+
 
 /* Footer
 ----------------------------------------------------*/

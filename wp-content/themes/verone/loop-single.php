@@ -31,18 +31,11 @@
 						 ?>
 					</div>
 						
-					<div class="comments-notice">
-						<?php comments_template( $file ); ?>
-						<?php
-							comments_popup_link( __( '', '1 Comment', '% Comments' ) );
-						?>	
-						
+					<div class="comments-notice">					
+						<?php	comments_popup_link( __( '', '1 Comment', '% Comments' ) );?>	
 					</div>	
 					
-					<div class="commentlist">
-						 <?php wp_list_comments(); ?>
-					</div>			
-						
+					<?php comments_template( $file ); ?>	
 															
 				</div>
 				<?php endwhile; ?>
