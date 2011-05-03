@@ -155,13 +155,10 @@ function verone_comment($comment, $args, $depth) {
 	
      </div>
 <?php
-<<<<<<< Updated upstream
 	break;
 	endswitch;
         }
-=======
 }
->>>>>>> Stashed changes
         
         
         
