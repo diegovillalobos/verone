@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #single {
+#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact {
 	display: block;
 	clear: both;
 	float: none;
@@ -41,7 +41,8 @@ body {
 #footer:after,
 #home_columns:after,
 #single:after,
-#contact_form:after {
+#contact_form:after,
+#contact:after {
   content: " ";
   display: block;
   position: relative;
@@ -715,6 +716,79 @@ h2.entry-title {
 }
 /* Page
 -----------------------------------------------------*/
+
+
+/* Contact 
+-----------------------------------------------------*/
+
+
+.screenReader { 
+ left: -9999px; 
+ position: absolute; 
+ top: -9999px;
+}
+
+#contactForm {
+	list-style: none;
+	width: 640px;
+}
+
+
+#email, #contactName, #subject{
+	width: 320px;
+	border: thin solid #999;
+}
+
+#commentsText {
+	width: 640px;
+	height: 150px;	
+	border: thin solid #999;
+}
+
+.forms {
+	margin-top: 3em;
+	list-style: none;
+}
+
+.forms label {
+	font-size: 2em;	
+	line-height: 1.5em;
+}
+
+.forms li:hover, .forms li:hover:focus {
+	color: #b40033;	
+}
+
+.error {
+	font-size: .8em;
+	color: #b40033;
+}
+
+.error:before {
+	content: "*";	
+}
+
+#sendcopy {
+	font-size: .8em;	
+}
+
+#submitted {
+	background-color: #b40033;
+	color: #fff;
+	border: none;
+	font-size: 1.7em;
+	padding: .2em 2em;
+	font-weight: bold;
+	float: right;
+	position: relative;
+	margin-top: -15px;
+}
+
+.textarea {
+	margin-top: 2em;	
+}
+
+
 /* Hash Grid
 -----------------------------------------------------*/
 /**
