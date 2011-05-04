@@ -130,36 +130,33 @@ function verone_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case '' :   
-    ?>
-   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
-     <div id="comment-<?php comment_ID(); ?>">
-	      
-	      <?php if ($comment->comment_approved == '0') : ?>
-         <em><?php _e('Your comment is awaiting moderation.') ?></em>
-         <br />
-	      <?php endif; ?>
-	
-	      <div class="comment-meta commentmetadata">
-		      <span class="comment-author vcard">
-	         <?php echo get_avatar($comment,$size='32',$default='<path_to_url>' ); ?>
-	     	   </span>
-	     	   <?php printf(__('<cite class="comment_author"> %s</cite>'), get_comment_author_link()) ?>
-		      <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-			      <?php printf(__('On %1$s :'), get_comment_date('M d y'),  get_comment_time()) ?>
-		      </a> 
+    	?>
+	   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+	     <div id="comment-<?php comment_ID(); ?>">
 		      
-		      
-	      </div>
-	
-	      <?php comment_text() ?>
-	
-     </div>
-<?php
-	break;
+		      <?php if ($comment->comment_approved == '0') : ?>
+	         <em><?php _e('Your comment is awaiting moderation.') ?></em>
+	         <br />
+		      <?php endif; ?>
+		
+		      <div class="comment-meta commentmetadata">
+			      <span class="comment-author vcard">
+		         <?php echo get_avatar($comment,$size='32',$default='<path_to_url>' ); ?>
+		     	   </span>
+		     	   <?php printf(__('<cite class="comment_author"> %s</cite>'), get_comment_author_link()) ?>
+			      <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+				      <?php printf(__('On %1$s :'), get_comment_date('M d y'),  get_comment_time()) ?>
+			      </a> 
+			      
+			      
+		      </div>
+		
+		      <?php comment_text() ?>
+		
+	     </div>
+	   </li>
+		<?php
+		break;
 	endswitch;
-        }
 }
-        
-        
-        
-        
+?>
