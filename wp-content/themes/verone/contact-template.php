@@ -78,6 +78,8 @@ if(isset($_POST['submitted'])) {
 
 
 <?php get_header(); ?>
+
+
 <?php get_sidebar(); ?>
 
 <?php if(isset($emailSent) && $emailSent == true) { ?>
@@ -144,12 +146,14 @@ if(isset($_POST['submitted'])) {
 				</span>
 				
 		</form>
+		
+		
+		
 	
 		<?php endwhile; ?>
 	<?php endif; ?>
 <?php } ?>
 
 </section>
-
 
 <?php get_footer(); ?>

@@ -788,6 +788,14 @@ h2.entry-title {
 	margin-top: 2em;	
 }
 
+.thanks {
+	margin-top: 6em;
+}
+
+.thanks p {
+	font-size: 1.5em;	
+}
+
 
 /* Hash Grid
 -----------------------------------------------------*/
