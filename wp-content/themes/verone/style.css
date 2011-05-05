@@ -537,7 +537,6 @@ h2.entry-title {
 
 #content {
 	float: left;
-	border-bottom: thin dashed #ccc;	
 	margin-bottom: 1em;
 }
 
@@ -692,7 +691,10 @@ h2.entry-title {
 	width: 637px;
 }
 
-
+#respond {
+	padding-bottom: 60px;
+	border-bottom: thin dashed #ccc;	
+}
 
 
 
@@ -722,7 +724,7 @@ h2.entry-title {
 -----------------------------------------------------*/
 
 
-.screenReader { 
+.firstname { 
  left: -9999px; 
  position: absolute; 
  top: -9999px;
