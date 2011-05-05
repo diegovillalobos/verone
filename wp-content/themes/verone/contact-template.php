@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Contact Form
@@ -10,7 +9,7 @@ Template Name: Contact Form
 if(isset($_POST['submitted'])) {
 
 	//Check to see if the honeypot captcha field was filled in
-	if(trim($_POST['checking']) !== '') {
+	if(trim($_POST['firstname']) !== '') {
 		$captchaError = true;
 	} else {
 	
@@ -142,7 +141,7 @@ if(isset($_POST['submitted'])) {
 			<span class="buttons">
 				<input type="submit" name="submitted" id="submitted" value="Send" />
 			</span>
-				<span class="screenReader"><label for="checking" class="screenReader">If you want to submit this form, do not enter anything in this field</label><input type="text" name="checking" id="checking" class="screenReader" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" />
+				<span class="firstname"><label for="firstname" class="firstname">First Name</label><input type="text" name="firstname" id="firstname" class="firstname" value="<?php if(isset($_POST['firstname']))  echo $_POST['firstname'];?>" />
 				</span>
 				
 		</form>

@@ -60,8 +60,8 @@
 
 
 <div id="posts_nav">
-	<span class="previous-post-link"><?php previous_post('%', ' Previous Post', 'no'); ?> </span>			
-	<span class="next-post-link"><?php next_post('%', 'Next Post ', 'no'); ?></span>	
+	<span class="previous-post-link"><?php next_posts_link(' Older Posts'); ?> </span>			
+	<span class="next-post-link"><?php previous_posts_link('More Recent Posts '); ?></span>	
 </div>	
 	</section>
 

@@ -10,9 +10,9 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							
 					<h2 class="entry-title">	
-									<?php 
-									the_title('<a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') .	 										'" rel="bookmark">', '</a>');
-									 ?>
+						<?php 
+						the_title('<a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a>');
+						 ?>
 					</h2>
 							
 					<div class="entry-image"> 
@@ -24,7 +24,7 @@
 						</abbr>
 					</p>
 									
-					<div class="entry-content">
+					<div class="entry-content">?
 						<?php 							
 						  the_content();
 						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')	
@@ -51,8 +51,8 @@
 
 
 <div id="posts_nav">
-	<span class="previous-post-link"><?php previous_post( '%', ' Previous Post', 'no'); ?> </span>			
-	<span class="next-post-link"><?php next_post('%', 'Next Post ', 'no'); ?></span>	
+	<span class="previous-post-link"><?php previous_posts( '%', ' Previous Post', 'no'); ?> </span>			
+	<span class="next-post-link"><?php next_posts('%', 'Next Post ', 'no'); ?></span>	
 </div>	
 	</section>
 
