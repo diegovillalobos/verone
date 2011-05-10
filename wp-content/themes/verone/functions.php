@@ -57,7 +57,17 @@ function verone_widgets_init() {
 			'after_title' => '</h2>',
 		) );   
 	   
-		// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+	   // Area 2, located at the top of the sidebar.
+		register_sidebar( array(
+			'name' => __( 'Portfolio Content', 'verone' ),
+			'id' => 'portfolio-content-widget-area',
+			'description' => __( 'This is where the portfolio content goes', 'verone' ),
+			'before_widget' => '<div id="%1$s" class="column-portfolio %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2 class="widget-title">',
+			'after_title' => '</h2>',
+		) ); 
+		// Area 3, located below the Primary Widget Area in the sidebar. Empty by default.
 		register_sidebar( array(
 			'name' => __( 'Sidebar', 'verone' ),
 			'id' => 'sidebar-widget-area',
@@ -68,7 +78,7 @@ function verone_widgets_init() {
 			'after_title' => '</h3>',
 		) );
 	}
-	// Area 3. located below the secondary widget area in the sidebar.
+	// Area 4. located below the secondary widget area in the sidebar.
 		register_sidebar( array(
 			'name' => __( 'Blog Sidebar', 'verone' ),
 			'id' => 'blog-sidebar-widget-area',
@@ -79,6 +89,8 @@ function verone_widgets_init() {
 			'after_title' => '</h3>',
 		) );
 	}
+		
+
 
 
 add_action( 'widgets_init', 'verone_widgets_init' );
