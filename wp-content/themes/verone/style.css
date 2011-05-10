@@ -357,6 +357,29 @@ h2 {
 	margin: 0;
 }
 
+/* = Portfolio Columns
+--------------------------------------------------------------*/
+#portfolio_columns {
+	position: relative;
+	clear: both;
+}
+
+#portfolio_columns .simpleimage {
+	display: block;
+	position: relative;
+	width: 306px;
+	margin: 0 30px 0 0;
+	float: left;
+}
+
+#portfolio_columns .simpleimage:last-child {
+	margin: 0;
+}
+
+
+
+
+
 /* Posts
 ---------------------------------------------------*/
 
