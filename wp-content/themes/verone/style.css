@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact {
+#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact, #portfolio {
 	display: block;
 	clear: both;
 	float: none;
@@ -42,7 +42,8 @@ body {
 #home_columns:after,
 #single:after,
 #contact_form:after,
-#contact:after {
+#contact:after,
+#portfolio_columns:after {
   content: " ";
   display: block;
   position: relative;
@@ -362,22 +363,20 @@ h2 {
 #portfolio_columns {
 	position: relative;
 	clear: both;
+	background-color: red;
 }
 
-#portfolio_columns .simpleimage {
+
+
+#portfolio_columns img {
 	display: block;
 	position: relative;
 	width: 306px;
-	margin: 0 30px 0 0;
 	float: left;
+	box-shadow: none;
+	border: none;
+	margin-right: 30px;
 }
-
-#portfolio_columns .simpleimage:last-child {
-	margin: 0;
-}
-
-
-
 
 
 /* Posts

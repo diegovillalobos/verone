@@ -5,7 +5,9 @@ Template Name: Portfolio
 ?>
 
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
+
+<section id="portfolio">
+	<?php get_sidebar(); ?>
 
 
 	<div id="content">
@@ -40,3 +42,7 @@ Template Name: Portfolio
 	
 	
 	</div>
+	
+</section>
+
+<?php get_footer(); ?>
