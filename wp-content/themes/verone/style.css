@@ -43,7 +43,8 @@ body {
 #single:after,
 #contact_form:after,
 #contact:after,
-#portfolio_columns:after {
+#portfolio_columns:after,
+.simpleimage:after {
   content: " ";
   display: block;
   position: relative;
@@ -131,7 +132,7 @@ body {
 #s:active {
 	border: none;
 }
-
+c
 .widget_search #s {/* This keeps the search inputs in line */
 	background-color: #fff;
 	color: #777;
@@ -189,8 +190,6 @@ body {
 
 /* = Middle
 ---------------------------------------------------------------*/
-
-
 
 /* = Sidebar
 ---------------------------------------------------------------*/
@@ -311,6 +310,17 @@ body {
 	margin: 0;
 }
 
+
+#portfolio.portfolio_navigation {	
+	float: left;
+	width: 642px;
+	margin: 0;
+	-moz-column-width: 306px;
+	-webkit-column-width: 306px;
+   -moz-column-gap: 30px;
+   -webkit-column-gap: 30px;
+}
+
 #slideshow img {
 	clear: both;
 	margin: 40px 0;
@@ -358,26 +368,35 @@ h2 {
 	margin: 0;
 }
 
-/* = Portfolio Columns
+/* = Portfolio
 --------------------------------------------------------------*/
 #portfolio_columns {
 	position: relative;
 	clear: both;
-	background-color: red;
 }
 
-
-
+ 
 #portfolio_columns img {
 	display: block;
 	position: relative;
-	width: 306px;
+	width: 304px;
 	float: left;
 	box-shadow: none;
 	border: none;
-	margin-right: 30px;
 }
 
+#portfolio p {
+	width: 100%;
+	padding: 3em;
+}
+
+.portfolio-title {
+	font-size: 1.5em;	
+}
+
+.portfolio-main {
+	color: #999;	
+}
 
 /* Posts
 ---------------------------------------------------*/
