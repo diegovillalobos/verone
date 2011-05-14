@@ -314,11 +314,12 @@ c
 #portfolio.portfolio_navigation {	
 	float: left;
 	width: 642px;
-	margin: 0;
+	margin: 2em 0;
 	-moz-column-width: 306px;
 	-webkit-column-width: 306px;
    -moz-column-gap: 30px;
    -webkit-column-gap: 30px;
+   
 }
 
 #slideshow img {
@@ -385,17 +386,13 @@ h2 {
 	border: none;
 }
 
-#portfolio p {
-	width: 100%;
-	padding: 3em;
-}
-
 .portfolio-title {
 	font-size: 1.5em;	
 }
 
 .portfolio-main {
 	color: #999;	
+	padding: 2em 2em 0 4em;
 }
 
 /* Posts
