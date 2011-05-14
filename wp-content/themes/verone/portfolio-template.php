@@ -5,7 +5,7 @@ Template Name: Portfolio
 ?>
 
 <?php get_header(); ?>
-
+<?php get_sidebar(); ?>
 <section id="portfolio">
 
 		<?php
@@ -14,14 +14,14 @@ Template Name: Portfolio
 					echo '<h2 class="portfolio-title">';
 					the_title();
 					echo '</h2>';
-					echo '<p class="portfolio-main">' ;
+					echo '<p>' ;
 					the_content();
 					echo '</p>' ;
 						endwhile;
 					wp_reset_postdata();
 		?>		
 
-	<?php get_sidebar(); ?>
+	
 
 	<div id="portfolio" class="portfolio_navigation" >
 			<?php if ( ! dynamic_sidebar( 'portfolio-content-widget-area' ) ) : ?>
