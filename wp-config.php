@@ -22,7 +22,7 @@ define('DB_NAME', 'verone');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '5t4r3e2w1q');
+define('DB_PASSWORD', 'my5ql');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
