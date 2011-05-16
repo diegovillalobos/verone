@@ -44,7 +44,8 @@ body {
 #contact_form:after,
 #contact:after,
 #portfolio_columns:after,
-.simpleimage:after {
+.simpleimage:after,
+.menu:after, ul:after{
   content: " ";
   display: block;
   position: relative;
@@ -187,6 +188,11 @@ body {
 	line-height: 1em;
 	margin-bottom: 2em;
 }
+
+.menu {
+	float: left;
+}
+
 
 /* = Middle
 ---------------------------------------------------------------*/
