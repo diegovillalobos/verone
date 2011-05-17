@@ -173,8 +173,10 @@ function verone_comment($comment, $args, $depth) {
 }
 
 
-
-
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 320, 500, true );
+}
 
 ?>
 
