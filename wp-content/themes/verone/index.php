@@ -1,7 +1,6 @@
 <!-- This is where the loop for the posts is -->
 
 
-
 <?php get_header(); ?>
 	<section id="posts">
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
@@ -10,6 +9,7 @@
 
 		<div id="content">	
 		
+
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

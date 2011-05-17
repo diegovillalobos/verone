@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="category">
+<section id="middle">
 	
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
 			<?php endif; ?>

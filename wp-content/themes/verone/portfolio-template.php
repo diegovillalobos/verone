@@ -6,7 +6,7 @@ Template Name: Portfolio
 
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
-<section id="portfolio">
+<section id="middle">
 
 		<?php
 				$query = new WP_Query( 'category_name=portfolio' );
@@ -15,17 +15,12 @@ Template Name: Portfolio
 					the_title();
 					echo '</h2>';
 					echo '<p>' ;
-					the_content();
+					the_excerpt();
 					echo '</p>' ;
 						endwhile;
 					wp_reset_postdata();
 		?>		
 
-	
-
-	<div id="portfolio" class="portfolio_navigation" >
-			<?php if ( ! dynamic_sidebar( 'portfolio-content-widget-area' ) ) : ?>
-			<?php endif; ?>
 		
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		
