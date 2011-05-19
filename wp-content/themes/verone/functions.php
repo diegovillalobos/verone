@@ -112,12 +112,12 @@ if ( ! isset( $content_width ) )
 
 function new_excerpt_more($more) {
        global $post;
-	return '<a href="'. get_permalink($post->ID) . '"> read more </a>';
+	return '<a href="'. get_permalink($post->ID) . '"> <br />read more </a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
 function new_excerpt_length($length) {
-	return 100;
+	return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
@@ -173,22 +173,48 @@ function verone_comment($comment, $args, $depth) {
 }
 
 
+
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
-        set_post_thumbnail_size( 320 );
+        set_post_thumbnail_size( 218, 150, true );
 }
 
 
 	add_action( 'init', 'create_post_type' );
 		function create_post_type() {
-			register_post_type( 'acme_project',
+			register_post_type( 'project',
 				array(
 					'labels' => array(
-						'name' => __( 'Projects' ),
-						'singular_name' => __( 'Project' )
+						'name'				 => __( 'Projects' ),
+						'singular_name'		 => __( 'Project' ),
+						'add new'			 =>	__('Add New'),
+						'add_new_item'		 => __('Add new Project'),
+						'edit'				 => __('Edit'),
+						'edit_item'			 => __('Edit This Project'),
+						'new_item'			 => __('New Project'),
+						'view'				 => __('View Project'),
+						'view_item'			 => __('View Project'),
+						'search_items'		 => __('Search Projects'),
+						'not_found'			 => __('No Projects Found'),
+						'not_found_in_trash' => __('No Projects found in Trash'),
 					),
-				'public' 		 => true,
-				'has_archive'	 => true
+				'public' 		 		=> true,
+				'has_archive'		    => true,
+				'exclude_from_search'   => false,
+				'hierarchical'			=> true,
+				'query_var' 			=> true,
+				/* 'capabilities' 			=> array(
+											'edit_post'			 => 'edit_project',
+											'edit_posts'		 => 'edit_projects',
+											'edit_others_posts'  => 'edit_others_projects',
+											'publish_posts'		 => 'publish_projects',
+											'read_post'			 => 'read_project',
+											'read_private_posts' => 'read_private_projects',
+											'delete_post'		 => 'delete_project',
+												), */
+				'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
+				'taxonomies'			=> array( 'post_tag', 'category'),
+				'can_export'			=> true,
 				)
 			);
 		}

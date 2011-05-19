@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact, #portfolio {
+#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact, #projects {
 	display: block;
 	clear: both;
 	float: none;
@@ -43,8 +43,7 @@ body {
 #single:after,
 #contact_form:after,
 #contact:after,
-#portfolio_columns:after,
-.simpleimage:after,
+#projects:after;
 .menu:after, ul:after{
   content: " ";
   display: block;
@@ -377,6 +376,23 @@ h2 {
 
 /* = Portfolio
 --------------------------------------------------------------*/
+
+#portfolio-sidebar {
+
+}
+
+.entry-content-portfolio {
+	width: 222px;
+	float: left;
+	margin-right: 30px;
+}
+
+.entry-content-portfolio img {
+	width: 218px;
+	height: 180px;
+}
+
+
 
 
 /* Posts

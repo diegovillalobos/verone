@@ -3,51 +3,31 @@
 Template Name: Portfolio
 */
 ?>
-
 <?php get_header(); ?>
 
-<section id="middle">
+<section id=projects >
 
-		
-		<?php
-				$query = new WP_Query( 'category_name=portfolio' );
-					while ( $query->have_posts() ) : $query->the_post();
-					the_post_thumbnail();
-					the_title();
-						endwhile;
-					wp_reset_postdata();
-		?>		
-		
-		
-		
+	<?php $loop = new WP_Query( array( 'post_type' => 'project', 'posts_per_page' => 10 ) ); ?>
+	
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	
 		
-
-		<?php get_sidebar(); ?>
-
-		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-		
-		<?php the_post_thumbnail(); ?>
-
-			<div id="post_<?php the_ID(); ?>" <?php post_class(); ?>>
-			
-				<div class="entry-image"> <?php echo wp_get_attachment_image( 1 ); ?> </div>		
-				
-			
-			</div>
-		
-		<?php endwhile; ?>
-		
-		<?php else : ?>
-		
-			<p class="no-posts"><?php _e('Sorry, no posts matched your criteria', 'example'); ?></p>
-			
-		
-		<?php endif; ?>
 	
 	
-	</div>
-	
+		<div class="entry-content-portfolio">
+			<?php
+				 the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="bookmark">', '</a></h2>');
+				if ( has_post_thumbnail() ) {
+					 the_post_thumbnail( array(290, 100) );
+					} 
+				 the_excerpt('<a href="<?php echo get_permalink(); ?>"> [ Read More → ]</a>'); 
+				 
+			?>
+		</div>
+	<?php endwhile; ?>
+
 </section>
 
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
