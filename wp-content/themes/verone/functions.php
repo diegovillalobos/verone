@@ -175,8 +175,24 @@ function verone_comment($comment, $args, $depth) {
 
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
-        set_post_thumbnail_size( 320, 500, true );
+        set_post_thumbnail_size( 320 );
 }
+
+
+	add_action( 'init', 'create_post_type' );
+		function create_post_type() {
+			register_post_type( 'acme_project',
+				array(
+					'labels' => array(
+						'name' => __( 'Projects' ),
+						'singular_name' => __( 'Project' )
+					),
+				'public' 		 => true,
+				'has_archive'	 => true
+				)
+			);
+		}
+
 
 ?>
 

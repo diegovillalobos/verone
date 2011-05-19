@@ -17,6 +17,11 @@ Template Name: Portfolio
 						endwhile;
 					wp_reset_postdata();
 		?>		
+		
+		
+		
+	
+		
 
 		<?php get_sidebar(); ?>
 
