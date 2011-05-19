@@ -25,7 +25,7 @@ body {
 }
 
 
-#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact, #projects {
+#header, #middle, #posts, #category, #searchpage, #footer, #single, #contact, #projects, #single-portfolio {
 	display: block;
 	clear: both;
 	float: none;
@@ -44,6 +44,7 @@ body {
 #contact_form:after,
 #contact:after,
 #projects:after,
+#single-portfolio:after,
 .menu:after,
 ul:after
  {
@@ -445,6 +446,10 @@ h2 {
 	margin-bottom: 15px;
 }
 
+.entry-content-portfolio a, .entry-content-portfolio a:visited {
+	color: #b4003;
+	text-decoration: none;
+}
 
 
 

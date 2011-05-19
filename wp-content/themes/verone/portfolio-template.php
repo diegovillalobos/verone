@@ -6,7 +6,6 @@ Template Name: Portfolio
 <?php get_header(); ?>
 
 <section id="projects" >
-<?php get_sidebar( 'portfolio' ); ?>
 
 	<?php $loop = new WP_Query( array( 'post_type' => 'project', 'posts_per_page' => 10 ) ); ?>
 	
