@@ -39,7 +39,7 @@ aaaaa
 					
 					<?php comments_template( $file ); ?>	
 															
-				</div>
+			</div>
 				<?php endwhile; ?>
 					
 					<?php else : ?>
@@ -47,7 +47,7 @@ aaaaa
 					<p class="no-posts"><?php _e('Sorry, no posts matched your criteria', 'verone'); ?></p>
 					
 	
-		<?php endif; ?>
+			<?php endif; ?>
 		</div>
 
 

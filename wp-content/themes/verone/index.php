@@ -34,18 +34,16 @@
 					<div class="entry-content">
 						<?php 
 						   the_content('read more');
-						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')		
+						   wp_link_pages('before=<p class="pages">' . __('Pages:','example') . '&after=</p>')
 						 ?>
-					</div>		
-							
+					</div>
+					
 					<div class="comments-notice">
 						<?php
 							comments_popup_link( __( 'Leave a comment', '1 Comment', '% Comments' ) );
 						?>	
 						
 					</div>	
-					
-					
 						
 															
 				</div>

@@ -57,17 +57,7 @@ function verone_widgets_init() {
 			'after_title' => '</h2>',
 		) );   
 	   
-	   // Area 2, located at the top of the sidebar.
-		register_sidebar( array(
-			'name' => __( 'Portfolio Content', 'verone' ),
-			'id' => 'portfolio-content-widget-area',
-			'description' => __( 'This is where the portfolio content goes', 'verone' ),
-			'before_widget' => '<div id="%1$s" class="column-portfolio %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h2 class="widget-title">',
-			'after_title' => '</h2>',
-		) ); 
-		// Area 3, located below the Primary Widget Area in the sidebar. Empty by default.
+		// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
 		register_sidebar( array(
 			'name' => __( 'Sidebar', 'verone' ),
 			'id' => 'sidebar-widget-area',
@@ -78,7 +68,7 @@ function verone_widgets_init() {
 			'after_title' => '</h3>',
 		) );
 	}
-	// Area 4. located below the secondary widget area in the sidebar.
+	// Area 3. located below the secondary widget area in the sidebar.
 		register_sidebar( array(
 			'name' => __( 'Blog Sidebar', 'verone' ),
 			'id' => 'blog-sidebar-widget-area',
@@ -111,8 +101,7 @@ if ( ! isset( $content_width ) )
 
 
 function new_excerpt_more($more) {
-       global $post;
-	return '<a href="'. get_permalink($post->ID) . '"> <br />read more </a>';
+	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -120,11 +109,6 @@ function new_excerpt_length($length) {
 	return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
-
-
-
-
-
 
 
 
@@ -174,62 +158,43 @@ function verone_comment($comment, $args, $depth) {
 
 
 
-if ( function_exists( 'add_theme_support' ) ) {
-	add_theme_support( 'post-thumbnails' );
-        set_post_thumbnail_size( 218, 150, true );
-}
-
-add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
-
-function my_post_image_html( $html, $post_id, $post_image_id ) {
-
-  $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $html . '</a>';
-  return $html;
-
+if ( function_exists( 'add_theme_support' ) ) { 
+  add_theme_support( 'post-thumbnails' ); 
 }
 
 
 
 
 
-	add_action( 'init', 'create_post_type' );
-		function create_post_type() {
-			register_post_type( 'project',
-				array(
-					'labels' => array(
-						'name'				 => __( 'Projects' ),
-						'singular_name'		 => __( 'Project' ),
-						'add new'			 =>	__('Add New'),
-						'add_new_item'		 => __('Add new Project'),
-						'edit'				 => __('Edit'),
-						'edit_item'			 => __('Edit This Project'),
-						'new_item'			 => __('New Project'),
-						'view'				 => __('View Project'),
-						'view_item'			 => __('View Project'),
-						'search_items'		 => __('Search Projects'),
-						'not_found'			 => __('No Projects Found'),
-						'not_found_in_trash' => __('No Projects found in Trash'),
-					),
-				'public' 		 		=> true,
-				'has_archive'		    => true,
-				'exclude_from_search'   => false,
-				'hierarchical'			=> true,
-				'query_var' 			=> true,
-				/* 'capabilities' 			=> array(
-											'edit_post'			 => 'edit_project',
-											'edit_posts'		 => 'edit_projects',
-											'edit_others_posts'  => 'edit_others_projects',
-											'publish_posts'		 => 'publish_projects',
-											'read_post'			 => 'read_project',
-											'read_private_posts' => 'read_private_projects',
-											'delete_post'		 => 'delete_project',
-												), */
-				'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
-				'taxonomies'			=> array( 'post_tag', 'category'),
-				'can_export'			=> true,
-				)
-			);
-		}
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'project',
+		array(
+			'labels' => array(
+				'name'				 => __( 'Projects' ),
+				'singular_name'		 => __( 'Project' ),
+				'add new'			 =>	__('Add New'),
+				'add_new_item'		 => __('Add new Project'),
+				'edit'				 => __('Edit'),
+				'edit_item'			 => __('Edit This Project'),
+				'new_item'			 => __('New Project'),
+				'view'				 => __('View Project'),
+				'view_item'			 => __('View Project'),
+				'search_items'		 => __('Search Projects'),
+				'not_found'			 => __('No Projects Found'),
+				'not_found_in_trash' => __('No Projects found in Trash'),
+			),
+			'public' 		 		=> true,
+			'has_archive'		    => true,
+			'exclude_from_search'	=> false,
+			'hierarchical'			=> true,
+			'query_var' 			=> true, 
+			'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
+			'taxonomies'			=> array( 'post_tag', 'category'),
+			'can_export'			=> true,
+		)
+	);
+}
 
 
 ?>

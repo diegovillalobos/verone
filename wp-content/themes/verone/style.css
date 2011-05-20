@@ -316,8 +316,8 @@ ul:after
 	width: 222px;
 	display: block;
 	font-size: 1em;
+	margin-right: -50px;
 	list-style: none;	
-	margin: 118px -53px 0 0;
 	padding: 15px 0 0 49px;
 	border-left: 1px solid #ccc;
 	color: #bbb;
@@ -373,17 +373,6 @@ ul:after
 }
 
 
-#portfolio.portfolio_navigation {	
-	float: left;
-	width: 642px;
-	margin: 2em 0;
-	-moz-column-width: 306px;
-	-webkit-column-width: 306px;
-   -moz-column-gap: 30px;
-   -webkit-column-gap: 30px;
-   
-}
-
 #slideshow img {
 	clear: both;
 	margin: 40px 0;
@@ -434,24 +423,48 @@ h2 {
 /* = Portfolio
 --------------------------------------------------------------*/
 
+
+
 .entry-content-portfolio {
+	display: block;
 	width: 222px;
 	float: left;
 	margin-right: 30px;
+	text-decoration: none;
 }
+
+.entry-content-portfolio p {
+	color: #333333;
+}
+
 
 .entry-content-portfolio img {
 	width: 218px;
 	height: 180px;
-	margin-bottom: 15px;
+	margin-top: 4em;
 }
 
-.entry-content-portfolio a, .entry-content-portfolio a:visited {
-	color: #b4003;
+.entry-content-portfolio img:hover {
+	opacity: 0.5;
+	border: thin solid #b40033;
+}
+
+.entry-content-portfolio .entry-title {
+	font-size: 1em;
+	margin-top: 0em;
+}
+
+#content a {
 	text-decoration: none;
 }
 
+.entry-content {
+	color: #333;
+}
 
+.entry-content p {
+	margin: 1.5em 0;
+}
 
 /* Posts
 ---------------------------------------------------*/
