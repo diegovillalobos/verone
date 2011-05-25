@@ -2,7 +2,7 @@
 
 
 <section id="single-portfolio">
-		<ul id="sidebar-portfolio" class="widget-area" role="complementary">
+		<ul id="sidebar-portfolio-single" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'sidebar-widget-area' ) ) : ?>
 			<li id="archives" class="widget-container">
 				<h3 class="widget-title"><?php _e( 'Archives', 'verone' ); ?></h3>

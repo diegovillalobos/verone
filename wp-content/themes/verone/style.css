@@ -205,7 +205,6 @@ ul:after
 	float: right;
 	width: 222px;
 	display: block;
-	overflow: 
 	font-size: 1em;
 	list-style: none;	
 	margin: -10px 31px;
@@ -223,12 +222,14 @@ ul:after
 	color: #444;
 	font-weight: normal;	
 	padding-bottom: 10px;
+	clear: both;
 }
 
 #sidebar ul {
 	display: block;
 	list-style: none;	
 	padding: 0 0 0 1.5em;
+	margin-bottom: 2em;
 }
 
 #sidebar a {
@@ -277,6 +278,7 @@ ul:after
 	color: #444;
 	font-weight: normal;	
 	padding-bottom: 10px;
+	clear: both;
 }
 
 #blog_sidebar ul {
@@ -317,40 +319,57 @@ ul:after
 	display: block;
 	font-size: 1em;
 	margin-right: -50px;
+	margin-top: 50px;
 	list-style: none;	
 	padding: 15px 0 0 49px;
 	border-left: 1px solid #ccc;
 	color: #bbb;
+	position: relative;
+}
+
+#sidebar-portfolio-single {
+		float: right;
+	width: 222px;
+	display: block;
+	font-size: 1em;
+	margin-right: -50px;
+	margin-top: 123px;
+	list-style: none;	
+	padding: 15px 0 0 49px;
+	border-left: 1px solid #ccc;
+	color: #bbb;
+	position: relative;
 }
 
 #sidebar-portfolio .widget-container {
 	padding: 0 0 2em;	
 }
 
-#sidebar-portfolio h3 {
+#sidebar-portfolio h3, #sidebar-portfolio-single h3 {
 	font-size: 1.142em;
 	color: #444;
 	font-weight: normal;	
 	padding-bottom: 10px;
+	clear: both;
 }
 
-#sidebar-portfolio ul {
+#sidebar-portfolio ul, #sidebar-portfolio-single ul {
 	display: block;
 	list-style: none;	
 	padding: 0 0 0 1.5em;
 }
 
-#sidebar-portfolio a {
+#sidebar-portfolio a, #sidebar-portfolio-single a {
 	text-decoration: none;
 	color: #777;
 }
 
-#sidebar-portfolio a:hover {
+#sidebar-portfolio a:hover, #sidebar-portfolio-single a:hover {
 	text-decoration: none;
 	color: #ccc;
 }
 
-#sidebar-portfolio ul li:before {
+#sidebar-portfolio ul li:before, #sidebar-portfolio-single ul li:before {
 	content: ">";
 	font-weight: lighter;
 	font-size: .9em;

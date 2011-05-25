@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-aaaaa
+
 <section id="single">
 	<div id="blog_sidebar"> <?php if ( ! dynamic_sidebar( 'blog-sidebar-widget-area' ) ) : ?>
 			<?php endif; ?>
