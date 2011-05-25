@@ -3,7 +3,7 @@
 	<div id="slideshow">
 		<img src="<?php echo esc_attr( get_bloginfo('template_directory', 'display')); ?>/images/header/mainpic.jpg" alt="Main Picture" width="917" height="272" />
 		<center><img class="nav" src="<?php echo esc_attr( get_bloginfo('template_directory','display')); ?>/images/header/slideshow_navigation.jpg" alt="Slideshow Navigation" width="415" height="38" /></center>
-	</div>
+	</div> 
 	<?php get_sidebar(); ?>
 	<div id="content">
 		<div id="home_columns">
