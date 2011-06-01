@@ -183,7 +183,7 @@ function create_post_type() {
 			'exclude_from_search'	=> false,
 			'hierarchical'			=> true,
 			'query_var' 			=> true, 
-			'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'thumbnail' ),
+			'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
 			'taxonomies'			=> array( 'post_tag', 'category'),
 			'can_export'			=> true,
 		)

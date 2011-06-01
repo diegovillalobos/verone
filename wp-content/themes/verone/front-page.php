@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <section id="middle">
-	<div id="slideshow">
-		<img src="<?php echo esc_attr( get_bloginfo('template_directory', 'display')); ?>/images/header/mainpic.jpg" alt="Main Picture" width="917" height="272" />
-		<center><img class="nav" src="<?php echo esc_attr( get_bloginfo('template_directory','display')); ?>/images/header/slideshow_navigation.jpg" alt="Slideshow Navigation" width="415" height="38" /></center>
-	</div> 
-	<?php get_sidebar(); ?>
+	
+	
+	<?php include (ABSPATH . '/wp-content/plugins/featured-content-gallery/gallery.php'); ?>
+
 	<div id="content">
 		<div id="home_columns">
 			<?php if ( ! dynamic_sidebar( 'home-content-widget-area' ) ) : ?>
