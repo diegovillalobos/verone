@@ -2,9 +2,12 @@
 <section id="middle">
 	
 	
-	<?php include (ABSPATH . '/wp-content/plugins/featured-content-gallery/gallery.php'); ?>
-
+	
+	
 	<div id="content">
+		
+		<?php echo do_shortcode('[bannerspace]'); ?>
+		
 		<div id="home_columns">
 			<?php if ( ! dynamic_sidebar( 'home-content-widget-area' ) ) : ?>
 			<?php endif; ?>

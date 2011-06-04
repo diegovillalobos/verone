@@ -186,6 +186,7 @@ function create_post_type() {
 			'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
 			'taxonomies'			=> array( 'post_tag', 'category'),
 			'can_export'			=> true,
+			'rewrite' 				=> array( 'slug' => 'projects' ),
 		)
 	);
 }

@@ -46,7 +46,7 @@ body {
 #projects:after,
 #single-portfolio:after,
 .menu:after,
-ul:after
+ul:after;
  {
   content: " ";
   display: block;
@@ -925,6 +925,23 @@ h2.entry-title {
 .thanks p {
 	font-size: 1.5em;	
 }
+
+
+
+/* Slideshow
+---------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Hash Grid

@@ -7,6 +7,8 @@ Template Name: Portfolio
 
 
 <section id="projects">
+	
+	
 
 	<ul id="sidebar-portfolio" class="widget-area" role="complementary">
 		<?php if ( ! dynamic_sidebar( 'sidebar-widget-area' ) ) : ?>
