@@ -60,6 +60,7 @@ color: #777777;
 font: 1.5em;
 margin-top: 30px !important;
 text-align: left;
+height: 200px;
 }
 
 #featured_slider .content_left h2 {
@@ -100,6 +101,7 @@ cursor: pointer;
 
 #featured_slider .feat_next:hover {
 background-position: -18px -16px;
+color: #b40033;
 }
 
 .feat_link {
@@ -131,7 +133,7 @@ color: #CCC;
 			AND wpostmeta.meta_key = 'feat_slider' 
 			AND wpostmeta.meta_value = '1' 
 			AND wposts.post_status = 'publish' 
-			AND (wposts.post_type = 'post' OR wposts.post_type = 'projects')";
+			AND (wposts.post_type = 'post' OR wposts.post_type = 'pages' OR wposts.post_type ='project' )";
 		
 		$pageposts = $wpdb->get_results($querystr, OBJECT); ?>
 		

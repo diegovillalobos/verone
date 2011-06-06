@@ -42,7 +42,7 @@ add_action("admin_init", "feat_init");
 add_action('save_post', 'save_feat');
 
 function feat_init(){
-    add_meta_box("feat_slider", "Featured Content Slider Options", "feat_meta", "projects", "normal", "high");
+    add_meta_box("feat_slider", "Featured Content Slider Options", "feat_meta", "project", "normal", "high");
     add_meta_box("feat_slider", "Featured Content Slider Options", "feat_meta", "page", "normal", "high");
     add_meta_box("feat_slider", "Featured Content Slider Options", "feat_meta", "post", "normal", "high");
 }
@@ -67,7 +67,7 @@ function save_feat(){
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) 
     return $post_id;
     global $post;
-    if($post->post_type == "post" || $post->post_type == "pages") {
+    if($post->post_type == "post" || $post->post_type == "pages" || $post->post_type == "project") {
 	update_post_meta($post->ID, "feat_slider", $_POST["feat_slider"]);
     }
 }
