@@ -20,10 +20,11 @@ float: left;
 margin: 10px 0px;
 position: relative;
 background-color: #fff;
-box-shadow: 0px 3px 10px 2px #ddd;
+box-shadow: 0px 3px 10px 4px #ddd;
 margin: 4em 0px !important;
 width: 976px;
-height: 250px
+height: 250px;
+border: thin solid #E0E0E0;
 }
 
 #featured_slider ul, #featured_slider ul li {
@@ -36,15 +37,18 @@ height: 200px;
 
 #featured_slider .img_right {
 float: left;
-width: 350px;
+width: 325px;
 height: 250px;
 margin-left:20px;
+margin-right: 25px;
 }
 
 #featured_slider .img_right img {
 float: left;
 width: 325px;
 height: 250px;
+box-shadow: none !important;
+border: none;
 }
 
 #featured_slider .content_left {
@@ -57,10 +61,15 @@ width: 306px;
 #featured_slider .excerpt p {
 line-height: 22px !important;
 color: #777777;
-font: 1.5em;
-margin-top: 30px !important;
+font: 1.7em;
+margin-top: 55px !important;
 text-align: left;
 height: 200px;
+}
+
+#featured_slider .excerpt a {
+	text-decoration: none;
+	font: 1.7em;
 }
 
 #featured_slider .content_left h2 {
@@ -167,7 +176,7 @@ color: #CCC;
 			</div>
 			
 			<div class="excerpt">
-				<?php the_excerpt();?>
+				<a href="<?php the_permalink();?>"> <?php the_excerpt();?> </a>
 			<div/>
 		</li>
 		

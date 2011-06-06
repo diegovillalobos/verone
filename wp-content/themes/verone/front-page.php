@@ -8,10 +8,12 @@
 	
 	<div id="content">
 		
+		
 		<div id="home_columns">
 			<?php if ( ! dynamic_sidebar( 'home-content-widget-area' ) ) : ?>
 			<?php endif; ?>
 		</div>
+		
 		
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		
@@ -37,7 +39,7 @@
 		
 		<?php endif; ?>
 	
-	
+		
 	</div>
 </section>
 
