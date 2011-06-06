@@ -19,49 +19,54 @@ $direct_path =  get_bloginfo('wpurl')."/wp-content/plugins/wp-featured-content-s
 float: left;
 margin: 10px 0px;
 position: relative;
-background-color: #<?php $bg = get_option('feat_bg'); if(!empty($bg)) {echo $bg;} else {echo "FFF";}?>;
-border: 1px solid #<?php $border = get_option('feat_border'); if(!empty($border)) {echo $border;} else {echo "CCC";}?>;
-width: <?php $width = get_option('feat_width'); if(!empty($width)) {echo $width;} else {echo "860";}?>px;
+background-color: #fff;
+box-shadow: 0px 3px 10px 2px #ddd;
+margin: 4em 0px !important;
+width: 976px;
+height: 250px
 }
 
 #featured_slider ul, #featured_slider ul li {
 list-style: none !important;
 border: none !important;
 float: left;
-margin: 10px;
-width: <?php $width = get_option('feat_width'); if(!empty($width)) {echo $width;} else {echo "860";}?>px;
-height: <?php $height = get_option('feat_height'); if(!empty($height)) {echo $height;} else {echo "210";}?>px;
+width: 970px;
+height: 200px;
 }
 
 #featured_slider .img_right {
 float: left;
-width: <?php $img_width = get_option('img_width'); if(!empty($img_width)) {echo $img_width;} else {echo "320";}?>px;
-height: <?php $img_height = get_option('img_height'); if(!empty($img_height)) {echo $img_height;} else {echo "200";}?>px;
-margin-left: 30px;
-margin-top: -10px;
-
+width: 350px;
+height: 250px;
+margin-left:20px;
 }
 
 #featured_slider .img_right img {
-width: <?php $img_width = get_option('img_width'); if(!empty($img_width)) {echo $img_width;} else {echo "320";}?>px;
-height: <?php $img_height = get_option('img_height'); if(!empty($img_height)) {echo $img_height;} else {echo "200";}?>px;
+float: left;
+width: 325px;
+height: 250px;
 }
 
 #featured_slider .content_left {
 float: left;
-color: #<?php $text_color = get_option('text_color'); if(!empty($text_color)) {echo $text_color;} else {echo "333";}?>;
-width: <?php $text_width = get_option('text_width'); if(!empty($text_width)) {echo $text_width;} else {echo "450";}?>px;
+color: #333;
+width: 306px;
+
 }
 
-#featured_slider .content_left p {
+#featured_slider .excerpt p {
 line-height: 22px !important;
-color: 333;
-text-indent: 0px;
+color: #777777;
+font: 1.5em;
+margin-top: 30px !important;
+text-align: left;
 }
 
 #featured_slider .content_left h2 {
-font-size: 30px !important;
+font-size: 3.5em !important;
 margin-bottom: 20px;
+width: 300px;
+padding: 20px 10px 20px 20px;
 }
 
 #featured_slider .feat_prev {
@@ -144,7 +149,25 @@ color: #CCC;
 			
 		?>
 		
-		<li><div class="content_left"><h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2><?php the_excerpt();?></div><div class="img_right"><a href="<?php the_permalink();?>"><img src="<?php echo $thumb;?>" /></a></div></li>
+		<li>
+			<div class="content_left">
+				<h2>
+					<a href="<?php the_permalink();?>"> <?php the_title();?></a>
+					
+				</h2>
+			</div>
+			
+			<div class="img_right">
+				<a href="<?php the_permalink();?>">
+					<img src="<?php echo $thumb;?>" />
+					
+				</a>
+			</div>
+			
+			<div class="excerpt">
+				<?php the_excerpt();?>
+			<div/>
+		</li>
 		
 		<?php endforeach; ?>
 		
