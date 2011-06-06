@@ -931,6 +931,11 @@ h2.entry-title {
 /* Slideshow
 ---------------------------------------------------------*/
 
+#featured_slider h2 a {
+	text-decoration: none;
+	color: #b40033;
+	font-size: 1.2em;
+}
 
 
 

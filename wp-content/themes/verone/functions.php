@@ -177,6 +177,7 @@ function create_post_type() {
 				'search_items'		 => __('Search Projects'),
 				'not_found'			 => __('No Projects Found'),
 				'not_found_in_trash' => __('No Projects found in Trash'),
+				'rewrite' 			 => array( 'slug' => 'projects' ),
 			),
 			'public' 		 		=> true,
 			'has_archive'		    => true,
@@ -186,23 +187,14 @@ function create_post_type() {
 			'supports'				=> array( 'title', 'editor', 'comments', 'trackbacks', 'excerpt', 'custom-fields', 'thumbnail' ),
 			'taxonomies'			=> array( 'post_tag', 'category'),
 			'can_export'			=> true,
-			'rewrite' 				=> array( 'slug' => 'projects' ),
+			
 		)
 	);
 }
 
 
 
-add_action('wp', 'js_head_load');
 
-function js_head_load(){
- 
-if(is_admin()) return;  //so that we're not loading unecessary scripts in the admin
- 
-wp_register_script('cycle', get_bloginfo('template_directory')  . '/scripts/jquery.cycle.all.min.js', array('jquery'), '1.0');
- 
-wp_enqueue_script('slideshow-activate',  get_bloginfo('template_directory')  . '/scripts/slideshow-activate.js', array('jquery', 'cycle'), '1.0');
-}
 ?>
 
 

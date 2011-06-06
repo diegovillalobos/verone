@@ -1,36 +1,9 @@
 <?php get_header(); ?>
 <section id="middle">
 	
-<?php
-$featured_category_id = 8;
-$number_of_posts = 5;
 
-$args = array('showposts'=>$number_of_posts, 'cat'=>$featured_category_id);
-
-$slideshow_query = new WP_Query($args);
-
-?>
-
-<div id="slideshow">
-	<?php
-		$duplicates = array();
-		while ($slideshow_query->have_posts()) : $slideshow_query->the_post();
-		$duplicates[] = $id;
-		
-		if (has_post_thumbnail()) {
-	?>
 	
-	<div class="post-thumbnail">
-		<a href="<?php the_permalink(); ?>">
-		<?php    the_post_thumbnail('slideshow-image'); ?>
-		</a>
-	</div>
-		<?php    }
-		endwhile;
-		?>
-</div>  <!-- end of #slideshow -->
-	
-	
+	<?php include (ABSPATH . '/wp-content/plugins/wp-featured-content-slider/content-slider.php'); ?>
 	
 	
 	<div id="content">
